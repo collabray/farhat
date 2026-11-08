@@ -7,7 +7,7 @@ An installable skill for AI coding agents (Claude Code, Antigravity and similar)
 
 Open Claude Code or Antigravity in the folder where you want to work and say:
 
-> Install the skill from `<this repository's URL>`, then use it to build the Farhat game in `./FarhatGame`.
+> Install the skill from `https://github.com/collabray/farhat.git`, then use it to build the Farhat game in `./FarhatGame`.
 
 The agent clones the repository, reads `AGENTS.md`, runs `python3 install.py`, and follows
 `skills/farhat-unity-builder/SKILL.md`. To do it by hand: `python3 install.py` (see `INSTALL.md` for options, user-wide install and the Claude Code plugin route).
