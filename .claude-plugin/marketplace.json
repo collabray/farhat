@@ -1,0 +1,12 @@
+{
+  "name": "farhat-game",
+  "owner": { "name": "Farhat Game Project" },
+  "plugins": [
+    {
+      "name": "farhat-unity-builder",
+      "source": "./",
+      "description": "Skill that guides an AI agent to build the Farhat Unity game from the production bible, from an empty folder to a playable 52-chapter greybox and on to release.",
+      "version": "1.0.0"
+    }
+  ]
+}

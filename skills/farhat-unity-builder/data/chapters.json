@@ -1,0 +1,3513 @@
+{
+  "schemaVersion": 1,
+  "chapters": [
+    {
+      "number": 1,
+      "id": "ch01",
+      "episodeTitle": "The Prince Comes Home",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "C",
+      "chapterType": "Hub",
+      "location": "Emirates palace, gardens, council hall, terrace",
+      "coreMechanic": "Free-roam exploration and the first Shadow chase",
+      "setPiece": "Council overhearing scene",
+      "storyBeats": "Farhat returns to the Emirates from Oxford and is joyfully reunited with Ben, his playful Shadow, his mother Dolunai and his father D'Emir Yassir. The King is dealing with Rashid, president of Petroglobe, who wants to drill in a forbidden part of the",
+      "sceneName": "Ch01_ThePrinceComesHome",
+      "locPrefix": "ch01.",
+      "objectives": [
+        {
+          "id": "ch01.greet-ben",
+          "tier": 1,
+          "text": "Greet Ben in the courtyard"
+        },
+        {
+          "id": "ch01.catch-shadow",
+          "tier": 1,
+          "text": "Catch the Shadow in the gardens"
+        },
+        {
+          "id": "ch01.find-parents",
+          "tier": 1,
+          "text": "Find the King and the Queen"
+        },
+        {
+          "id": "ch01.overhear-council",
+          "tier": 1,
+          "text": "Overhear the council with Rashid"
+        },
+        {
+          "id": "ch01.view-forbidden-zone",
+          "tier": 2,
+          "text": "View the forbidden zone from the terrace"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "shadow.scout"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Farhat returns to the Emirates from Oxford and is joyfully reunited with Ben, his playful Shadow, his mother Dolunai and his father D'Emir Yassir. The King is dealing with Rashid, president of Petroglobe, who wants to drill in a forbidden part of the",
+        "levelAndObjectives": "Palace courtyard, gardens, council hall, terrace. Objectives: greet Ben, catch the Shadow, find both parents, overhear the council, view the forbidden zone from the terrace.",
+        "mechanicsEnemiesBoss": "Movement, interaction, dialogue tone, Shadow call (taught as a chase through the gardens). No combat.",
+        "failStates": "None. This is the safe chapter that teaches the player what is at stake.",
+        "cutscenesAndUnlocks": "Arrival cinematic, family reunion, the Rashid council scene. Unlocks Shadow Scout."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 2,
+      "id": "ch02",
+      "episodeTitle": "The Tail of the Scorpion",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Training",
+      "location": "Oxford library, desert training arena, first labyrinth",
+      "coreMechanic": "Combat and alchemy lessons, then a labyrinth",
+      "setPiece": "First labyrinth with parent illusions",
+      "storyBeats": "In Oxford, Tilda finds the legend of the Shariman and concludes that the changes in the scorpion constellation signal the fulfilment of a foretold destiny. In the desert Farhat trains under Wings. Egokhan allies with Rashid and they plan to draw Farhat into a labyrinth where his parents will be held prisoner. Dolunai urges her son to begin a long journey to reassemble the Shariman and save the world from Egokhan. (Order of these scenes within the episode is confirmed in the episode check.)",
+      "sceneName": "Ch02_TheTailOfTheScorpion",
+      "locPrefix": "ch02.",
+      "objectives": [
+        {
+          "id": "ch02.library-decode",
+          "tier": 1,
+          "text": "Decode the legend as Tilda"
+        },
+        {
+          "id": "ch02.pass-lessons",
+          "tier": 1,
+          "text": "Pass the four training lessons"
+        },
+        {
+          "id": "ch02.brew-heal",
+          "tier": 1,
+          "text": "Brew a first Heal potion"
+        },
+        {
+          "id": "ch02.clear-labyrinth",
+          "tier": 1,
+          "text": "Cross the labyrinth"
+        },
+        {
+          "id": "ch02.accept-journey",
+          "tier": 2,
+          "text": "Accept the journey to reassemble the Shariman"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "combat.sword-combo",
+        "meter.light",
+        "potion.heal"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "In Oxford, Tilda finds the legend of the Shariman and concludes that the changes in the scorpion constellation signal the fulfilment of a foretold destiny. In the desert Farhat trains under Wings. Egokhan allies with Rashid and they plan to draw Farhat into a labyrinth where his parents will be held prisoner. Dolunai urges her son to begin a long journey to reassemble the Shariman and save the world from Egokhan. (Order of these scenes within the episode is confirmed in the episode check.)",
+        "levelAndObjectives": "Three parts: (1) a short playable Oxford library scene as Tilda (tutorial for decoding); (2) desert training arena with four lessons; (3) the first labyrinth.",
+        "mechanicsEnemiesBoss": "Lessons: guard and parry, dodge, heavy strike, light channelling. Alchemy tutorial: gather desert plants, brew a first Heal. Labyrinth enemies: Egokhan's smoke wraiths and illusions of the parents.",
+        "failStates": "Health failure; dead ends in the labyrinth cost time; failing a lesson repeats it.",
+        "cutscenesAndUnlocks": "Wings's introduction; Dolunai's request; the villains' plan cutaway. Unlocks the sword combo, light meter and Heal potion."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 3,
+      "id": "ch03",
+      "episodeTitle": "A Genius Named Tilda",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Travel to England, Oxford campus",
+      "coreMechanic": "Map decoding with Tilda",
+      "setPiece": "Tilda's translation of the map",
+      "storyBeats": "Wings gives Farhat a map drawn ages ago by the sage Zenem. Farhat cannot read it, so with Wings and Ben he goes to England to ask old Professor Muff at the college where he once studied. In place of the professor he finds the young Tilda, who",
+      "sceneName": "Ch03_AGeniusNamedTilda",
+      "locPrefix": "ch03.",
+      "objectives": [
+        {
+          "id": "ch03.travel-to-oxford",
+          "tier": 1,
+          "text": "Travel to Oxford"
+        },
+        {
+          "id": "ch03.meet-tilda",
+          "tier": 1,
+          "text": "Meet Tilda"
+        },
+        {
+          "id": "ch03.decode-map",
+          "tier": 1,
+          "text": "Decode Zenem's map"
+        },
+        {
+          "id": "ch03.set-first-target",
+          "tier": 2,
+          "text": "Set the first fragment target"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "system.decode",
+        "map.first-target"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Wings gives Farhat a map drawn ages ago by the sage Zenem. Farhat cannot read it, so with Wings and Ben he goes to England to ask old Professor Muff at the college where he once studied. In place of the professor he finds the young Tilda, who",
+        "levelAndObjectives": "Travel sequence, Oxford campus hub (library, courtyard, lab), a map-decoding set piece.",
+        "mechanicsEnemiesBoss": "Decode system (first full use). Light social interaction. No combat.",
+        "failStates": "Puzzle failure only (resets).",
+        "cutscenesAndUnlocks": "Meeting Tilda. Unlocks the Decode system and the world map with the first target. Whether Tilda joins the party in this chapter or later is confirmed in the episode check [I]."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 4,
+      "id": "ch04",
+      "episodeTitle": "The Light of the Shariman",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "SetPiece",
+      "location": "First fragment site",
+      "coreMechanic": "Timed retrieval during an alignment",
+      "setPiece": "First fragment retrieval",
+      "storyBeats": "First fragment retrieval at the place and moment Tilda calculated. Confirm actual events, antagonists and location.",
+      "sceneName": "Ch04_TheLightOfTheShariman",
+      "locPrefix": "ch04.",
+      "objectives": [
+        {
+          "id": "ch04.reach-site",
+          "tier": 1,
+          "text": "Reach the site before the moment"
+        },
+        {
+          "id": "ch04.activate-fragment",
+          "tier": 1,
+          "text": "Activate the fragment during the alignment"
+        },
+        {
+          "id": "ch04.collect-fragment-1",
+          "tier": 2,
+          "text": "Collect the first fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.1",
+        "meter.tier1",
+        "hearts.plus1.ch04"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "First fragment retrieval at the place and moment Tilda calculated. Confirm actual events, antagonists and location.",
+        "levelAndObjectives": "A timed retrieval: reach the site before the exact moment, then activate the fragment during the alignment.",
+        "mechanicsEnemiesBoss": "Timed traversal, light channelling, first fragment interaction.",
+        "failStates": "Objective failure if the moment is missed (reset the approach).",
+        "cutscenesAndUnlocks": "First fragment cutscene. Unlocks light-meter tier one."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 5,
+      "id": "ch05",
+      "episodeTitle": "In the Great Darkness",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "SetPiece",
+      "location": "Quicksand descent, Sepolta, Cell of Great Darkness",
+      "coreMechanic": "Quicksand traversal, dissolve timer, parallel play on the surface",
+      "setPiece": "Egokhan's stone-guardian wall",
+      "storyBeats": "Egokhan kidnaps the Shadow and takes it to the buried town of Sepolta, sealing it in the Cell of Great Darkness to dissolve slowly. Farhat must descend through quicksand to retrieve it, but Egokhan blocks the way back. On the surface, Tilda, Wings and Ben use a drilling device they borrowed from Rashid to clear the path Egokhan created.",
+      "sceneName": "Ch05_InTheGreatDarkness",
+      "locPrefix": "ch05.",
+      "objectives": [
+        {
+          "id": "ch05.descend-quicksand",
+          "tier": 1,
+          "text": "Descend through the quicksand"
+        },
+        {
+          "id": "ch05.cross-sepolta",
+          "tier": 1,
+          "text": "Cross Sepolta in the dark"
+        },
+        {
+          "id": "ch05.rescue-shadow",
+          "tier": 1,
+          "text": "Free the Shadow from the Cell of Great Darkness"
+        },
+        {
+          "id": "ch05.drill-the-path",
+          "tier": 1,
+          "text": "Drill the blocked path as the surface team"
+        },
+        {
+          "id": "ch05.escape-sepolta",
+          "tier": 2,
+          "text": "Escape Sepolta"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "shadow.swap"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Egokhan kidnaps the Shadow and takes it to the buried town of Sepolta, sealing it in the Cell of Great Darkness to dissolve slowly. Farhat must descend through quicksand to retrieve it, but Egokhan blocks the way back. On the surface, Tilda, Wings and Ben use a drilling device they borrowed from Rashid to clear the path Egokhan created.",
+        "levelAndObjectives": "Parallel play: Farhat below (quicksand descent, Sepolta streets, the Cell) and a surface segment where the player controls Tilda, Wings and Ben to drill the blocked path.",
+        "mechanicsEnemiesBoss": "Shadow locked. Quicksand physics, rope-anchor puzzles, light-only visibility in Sepolta, drill gadget. Mini-boss: Egokhan's blocking wall of stone guardians.",
+        "failStates": "Dissolve meter reaches zero (objective failure); quicksand (reset to last ledge); health failure.",
+        "cutscenesAndUnlocks": "The kidnapping; the rescue reunion; the surface drilling. Restores the Shadow with Swap unlocked."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 6,
+      "id": "ch06",
+      "episodeTitle": "Ambush in the Desert",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Combat",
+      "location": "Open desert",
+      "coreMechanic": "Wave combat then escape",
+      "setPiece": "Desert ambush",
+      "storyBeats": "Ambush in the desert. Confirm antagonists, trigger and outcome.",
+      "sceneName": "Ch06_AmbushInTheDesert",
+      "locPrefix": "ch06.",
+      "objectives": [
+        {
+          "id": "ch06.survive-ambush",
+          "tier": 1,
+          "text": "Survive the ambush"
+        },
+        {
+          "id": "ch06.escape-ambush",
+          "tier": 1,
+          "text": "Escape to the next waypoint"
+        },
+        {
+          "id": "ch06.collect-fragment-2",
+          "tier": 2,
+          "text": "Collect the second fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "potion.boost",
+        "fragment.2"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Ambush in the desert. Confirm antagonists, trigger and outcome.",
+        "levelAndObjectives": "Open desert arena. Survive waves, then escape to the next waypoint.",
+        "mechanicsEnemiesBoss": "Wave combat with Egokhan constructs and Petroglobe drones; a possible second fragment retrieval [I].",
+        "failStates": "Health failure; objective failure if the wagon, camp or companion is lost.",
+        "cutscenesAndUnlocks": "Ambush opening; escape. Unlocks Boost potion recipe."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": [
+        "fragment.2"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "ch07",
+      "episodeTitle": "A Trip in a Balloon",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Chase",
+      "location": "Balloon flight to Cappadocia",
+      "coreMechanic": "Balloon steering, aerial combat, Shadow contest",
+      "setPiece": "Lead monster balloon and the shadow contest",
+      "storyBeats": "Making their getaway, Farhat and his friends board a hot air balloon and flee toward Cappadocia. Egokhan unleashes a fleet of aggressive, monstrous balloons against them. Meanwhile Rashid tries to take the magic crystal with a machine that generates an artificial shadow, but Farhat's Shadow proves more capable than Rashid's.",
+      "sceneName": "Ch07_ATripInABalloon",
+      "locPrefix": "ch07.",
+      "objectives": [
+        {
+          "id": "ch07.launch-balloon",
+          "tier": 1,
+          "text": "Launch the balloon"
+        },
+        {
+          "id": "ch07.pass-gates",
+          "tier": 1,
+          "text": "Steer through the route gates"
+        },
+        {
+          "id": "ch07.defeat-lead-balloon",
+          "tier": 1,
+          "text": "Defeat the lead monster balloon"
+        },
+        {
+          "id": "ch07.win-shadow-contest",
+          "tier": 1,
+          "text": "Win the shadow contest"
+        },
+        {
+          "id": "ch07.land-cappadocia",
+          "tier": 2,
+          "text": "Land in Cappadocia"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Chase",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "shadow.shape",
+        "vehicle.balloon"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Making their getaway, Farhat and his friends board a hot air balloon and flee toward Cappadocia. Egokhan unleashes a fleet of aggressive, monstrous balloons against them. Meanwhile Rashid tries to take the magic crystal with a machine that generates an artificial shadow, but Farhat's Shadow proves more capable than Rashid's.",
+        "levelAndObjectives": "Aerial chase over rock towers and valleys, then a landing set piece. Objectives: keep the balloon alive, steer through gates, beat the monster balloons, win the shadow contest.",
+        "mechanicsEnemiesBoss": "Balloon steering and burner control, fire-and-dodge combat from the basket, Tilda working the instruments. Shadow contest: a short duel where the player controls the Shadow in a fast-reaction chase against Rashid's artificial shadow. Boss: the lead monster balloon.",
+        "failStates": "Chase failure (balloon damaged, restart from last gate); objective failure if the crystal is taken in the shadow contest.",
+        "cutscenesAndUnlocks": "Escape launch, Cappadocia reveal, the shadow contest. Unlocks the balloon as a hub vehicle and Shadow Shape."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 8,
+      "id": "ch08",
+      "episodeTitle": "Watch Out for Miss Keyhole",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Stealth",
+      "location": "Dusty desert village",
+      "coreMechanic": "Cover-up stealth with an awareness meter",
+      "setPiece": "Recover the two crystals unnoticed",
+      "storyBeats": "Oxford University is in a grave scientific crisis because Tilda has been away so long. Miss Keyhole, Tilda's dreadful tutor, is sent to persuade her to return. She reaches the friends in a dusty desert village and, through a mistake, unwittingly takes possession of the two Shariman crystals Farhat had retrieved. Wings's soft side saves the day and the crystals return to Farhat. Miss Keyhole never realises the wild events that happened around her.",
+      "sceneName": "Ch08_WatchOutForMissKeyhole",
+      "locPrefix": "ch08.",
+      "objectives": [
+        {
+          "id": "ch08.meet-keyhole",
+          "tier": 1,
+          "text": "Meet Miss Keyhole"
+        },
+        {
+          "id": "ch08.recover-crystals",
+          "tier": 1,
+          "text": "Recover the two crystals unnoticed"
+        },
+        {
+          "id": "ch08.keep-awareness-low",
+          "tier": 1,
+          "text": "Keep her awareness meter low"
+        },
+        {
+          "id": "ch08.send-keyhole-off",
+          "tier": 2,
+          "text": "See Miss Keyhole off"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Stealth",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "cameo.keyhole"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Oxford University is in a grave scientific crisis because Tilda has been away so long. Miss Keyhole, Tilda's dreadful tutor, is sent to persuade her to return. She reaches the friends in a dusty desert village and, through a mistake, unwittingly takes possession of the two Shariman crystals Farhat had retrieved. Wings's soft side saves the day and the crystals return to Farhat. Miss Keyhole never realises the wild events that happened around her.",
+        "levelAndObjectives": "A dusty desert village hub with houses, a market and a well. Objective: recover the two crystals without Miss Keyhole noticing anything supernatural.",
+        "failStates": "Awareness meter full: she takes Tilda aside and the section resets.",
+        "cutscenesAndUnlocks": "Keyhole's arrival, the mistaken pickup, Wings's softening. Unlocks the Keyhole running gag (cameo in later chapters) and a cosmetic for Tilda.",
+        "mechanicsEnemiesBoss": "Cover-up system: an awareness meter rises with noise, visible magic and combat in her line of sight; the player uses distractions, the Shadow in disguise forms, and Wings's calm negotiation. Light comic combat only out of her view."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 9,
+      "id": "ch09",
+      "episodeTitle": "Experience Deceives",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Deception puzzles",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "Unconfirmed. Title suggests a chapter about deception or false appearances.",
+      "sceneName": "Ch09_ExperienceDeceives",
+      "locPrefix": "ch09.",
+      "objectives": [
+        {
+          "id": "ch09.spot-the-false",
+          "tier": 1,
+          "text": "Spot what is false"
+        },
+        {
+          "id": "ch09.solve-deception",
+          "tier": 1,
+          "text": "Solve the deception puzzle"
+        },
+        {
+          "id": "ch09.leave-area",
+          "tier": 2,
+          "text": "Leave the area"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Unconfirmed. Title suggests a chapter about deception or false appearances.",
+        "levelAndObjectives": "Provisional design: a deception puzzle chapter (spot what is false) in a location confirmed in the episode check.",
+        "mechanicsEnemiesBoss": "Observation puzzles, Tilda scanning, light combat.",
+        "failStates": "Puzzle failure; objective failure if deceived into a trap.",
+        "cutscenesAndUnlocks": "Written after the episode check. Possible fragment or story reveal."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 10,
+      "id": "ch10",
+      "episodeTitle": "Dreams Are Reality",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Dream-logic puzzles",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "Unconfirmed. Title suggests a dream sequence.",
+      "sceneName": "Ch10_DreamsAreReality",
+      "locPrefix": "ch10.",
+      "objectives": [
+        {
+          "id": "ch10.enter-dream",
+          "tier": 1,
+          "text": "Enter the dream"
+        },
+        {
+          "id": "ch10.solve-dream-puzzle",
+          "tier": 1,
+          "text": "Solve the shifting-layout puzzle"
+        },
+        {
+          "id": "ch10.wake-up",
+          "tier": 2,
+          "text": "Wake up"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "hearts.plus1.ch10"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Unconfirmed. Title suggests a dream sequence.",
+        "levelAndObjectives": "Provisional design: dream-logic levels with shifting layouts, anchored in the real location confirmed in the episode check.",
+        "mechanicsEnemiesBoss": "Shape-shifting layouts, Shadow Swap puzzles.",
+        "failStates": "Puzzle failure; health failure.",
+        "cutscenesAndUnlocks": "Written after the episode check."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 11,
+      "id": "ch11",
+      "episodeTitle": "Snarchkoff Against Snarchkoff",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Stealth",
+      "location": "Petroglobe Palace, Egokhan's mazes",
+      "coreMechanic": "Disguise infiltration, identity loss, memory echoes",
+      "setPiece": "Egokhan's maze guardian and Dolunai's voice",
+      "storyBeats": "Rashid kidnaps Tilda and brings her to Petroglobe Palace in the Emirates. To rescue her, Farhat uses one of Wings's powerful potions to turn into Rashid. It works perfectly, but Egokhan destroys the antidote. Farhat is imprisoned in Rashid's form and takes on Rashid's own wicked personality. Tilda and the others do all they can, tracking him into the depths of Egokhan's mazes. In the end, his mother Dolunai's sweet voice revives his true soul and breaks the spell.",
+      "sceneName": "Ch11_SnarchkoffAgainstSnarchkoff",
+      "locPrefix": "ch11.",
+      "objectives": [
+        {
+          "id": "ch11.infiltrate-palace",
+          "tier": 1,
+          "text": "Infiltrate Petroglobe Palace disguised as Rashid"
+        },
+        {
+          "id": "ch11.survive-identity-loss",
+          "tier": 1,
+          "text": "Resist the identity loss in the cell and maze"
+        },
+        {
+          "id": "ch11.track-farhat",
+          "tier": 1,
+          "text": "Track Farhat through the mazes as the friends"
+        },
+        {
+          "id": "ch11.rebuild-identity",
+          "tier": 1,
+          "text": "Collect the memory echoes of family and friends"
+        },
+        {
+          "id": "ch11.free-tilda",
+          "tier": 2,
+          "text": "Free Tilda"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Stealth",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "potion.transform"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Rashid kidnaps Tilda and brings her to Petroglobe Palace in the Emirates. To rescue her, Farhat uses one of Wings's powerful potions to turn into Rashid. It works perfectly, but Egokhan destroys the antidote. Farhat is imprisoned in Rashid's form and takes on Rashid's own wicked personality. Tilda and the others do all they can, tracking him into the depths of Egokhan's mazes. In the end, his mother Dolunai's sweet voice revives his true soul and breaks the spell.",
+        "levelAndObjectives": "Four parts: (1) infiltrate Petroglobe Palace disguised as Rashid; (2) play Farhat-as-Rashid in a cell and maze; (3) play Tilda, Ben and Wings tracking him; (4) the voice-of-Dolunai finale.",
+        "failStates": "Suspicion meter full (reset infiltration); identity meter full in part 2 forces a loop back to the cell; health failure.",
+        "cutscenesAndUnlocks": "Tilda's capture, the transformation, the destroyed antidote, Dolunai's voice. Unlocks the Transform potion recipe.",
+        "mechanicsEnemiesBoss": "Disguise infiltration: bluff guards through dialogue and posture, keep suspicion low. Identity loss: in part 2 the HUD gradually distorts and the dialogue options turn villainous; this is a feeling, not a branch, because the story outcome is fixed. Finale: a memory-echo sequence in which the player collects fragments of Farhat's own voice, family and friends to rebuild his true self. Boss: Egokhan's maze guardian."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 12,
+      "id": "ch12",
+      "episodeTitle": "Under the Sun of Egokhan",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Survival",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Heat and shade survival",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "Unconfirmed. Title suggests Egokhan using sun or heat as a weapon.",
+      "sceneName": "Ch12_UnderTheSunOfEgokhan",
+      "locPrefix": "ch12.",
+      "objectives": [
+        {
+          "id": "ch12.manage-heat",
+          "tier": 1,
+          "text": "Manage the heat meter"
+        },
+        {
+          "id": "ch12.reach-shade",
+          "tier": 1,
+          "text": "Reach safe shade"
+        },
+        {
+          "id": "ch12.meet-egokhan",
+          "tier": 2,
+          "text": "Face Egokhan"
+        },
+        {
+          "id": "ch12.collect-fragment-3",
+          "tier": 2,
+          "text": "Collect the third fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.3"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Unconfirmed. Title suggests Egokhan using sun or heat as a weapon.",
+        "levelAndObjectives": "Provisional design: heat survival in a location confirmed in the episode check.",
+        "mechanicsEnemiesBoss": "Heat meter, shade and water management, Egokhan encounter.",
+        "failStates": "Heat meter empties (reset to shade), health failure.",
+        "cutscenesAndUnlocks": "Written after the episode check."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": [
+        "fragment.3"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "ch13",
+      "episodeTitle": "Spider Web",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Dungeon",
+      "location": "Mexican jungle, web-filled dungeon",
+      "coreMechanic": "Alchemy disabled, web traversal, spot the disguised cousin",
+      "setPiece": "Giant spider",
+      "storyBeats": "Farhat and his companions reach Mexico on the trail of the fourth fragment. An outside force makes Wings's herbs unusable, and with them his magic. The friends fall into one of Rashid's traps, in which he disguises himself as one of Ben's faithful cousins.",
+      "sceneName": "Ch13_SpiderWeb",
+      "locPrefix": "ch13.",
+      "objectives": [
+        {
+          "id": "ch13.cross-jungle",
+          "tier": 1,
+          "text": "Cross the jungle without alchemy"
+        },
+        {
+          "id": "ch13.spot-fake-cousin",
+          "tier": 1,
+          "text": "Spot the disguised cousin"
+        },
+        {
+          "id": "ch13.escape-web",
+          "tier": 1,
+          "text": "Escape the web trap"
+        },
+        {
+          "id": "ch13.restore-alchemy",
+          "tier": 2,
+          "text": "Restore Wings's alchemy"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "alchemy.restored"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Farhat and his companions reach Mexico on the trail of the fourth fragment. An outside force makes Wings's herbs unusable, and with them his magic. The friends fall into one of Rashid's traps, in which he disguises himself as one of Ben's faithful cousins.",
+        "levelAndObjectives": "Mexican jungle approach, a camp, then a web-filled dungeon. Objectives: cross the jungle without alchemy, spot the fake cousin, escape the web trap.",
+        "mechanicsEnemiesBoss": "Alchemy locked (potions fail, crafting disabled). Web traversal (cut strands, swing, burn). Spot the cousin: the player questions a cousin using what Ben's cousin network has taught them; the disguised Rashid has a tell. Boss: giant spider.",
+        "failStates": "Health failure; trapped in webs if too slow; picking the wrong cousin triggers the trap.",
+        "cutscenesAndUnlocks": "Arrival in Mexico, the herb failure, the cousin reveal. Restores alchemy at chapter end."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 14,
+      "id": "ch14",
+      "episodeTitle": "The Valley of the Mayas",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Hub",
+      "location": "Mayan village, ball court, sacred pool, pyramid",
+      "coreMechanic": "Ball game, antidote crafting, pyramid climb",
+      "setPiece": "The pyramid with Egokhan's face",
+      "storyBeats": "The Mayans of a lost village welcome Farhat's arrival as predestined, and their queen Shulena is fascinated by her guests, especially after Farhat and the others win a hard ball game against local champions. Rashid, dressed as a witch doctor, tricks Farhat into a pool where Egokhan infects him with the Red Death. Tilda's science and Shulena's secret jungle herbs together make the antidote that saves him. Farhat then climbs an ancient pyramid to retrieve the fourth fragment, but the pyramid has Egokhan's features and swallows him.",
+      "sceneName": "Ch14_TheValleyOfTheMayas",
+      "locPrefix": "ch14.",
+      "objectives": [
+        {
+          "id": "ch14.earn-trust",
+          "tier": 1,
+          "text": "Win the ball game"
+        },
+        {
+          "id": "ch14.avoid-pool-trap",
+          "tier": 1,
+          "text": "Avoid the witch doctor's pool trap"
+        },
+        {
+          "id": "ch14.craft-antidote",
+          "tier": 1,
+          "text": "Craft the antidote before the timer ends"
+        },
+        {
+          "id": "ch14.climb-pyramid",
+          "tier": 2,
+          "text": "Climb the pyramid"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "potion.cure",
+        "party.shulena"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "The Mayans of a lost village welcome Farhat's arrival as predestined, and their queen Shulena is fascinated by her guests, especially after Farhat and the others win a hard ball game against local champions. Rashid, dressed as a witch doctor, tricks Farhat into a pool where Egokhan infects him with the Red Death. Tilda's science and Shulena's secret jungle herbs together make the antidote that saves him. Farhat then climbs an ancient pyramid to retrieve the fourth fragment, but the pyramid has Egokhan's features and swallows him.",
+        "levelAndObjectives": "Village hub, ball court, a sacred pool, herb gardens, pyramid ascent. Objectives: earn the village's trust through the ball game, avoid the pool trap, craft the antidote, climb the pyramid.",
+        "failStates": "Ball game lost (retry); antidote timer runs out (Red Death overcomes, restart crafting); fall from the pyramid.",
+        "cutscenesAndUnlocks": "Village welcome, Shulena meeting, the disguised witch doctor, the pyramid swallowing Farhat. Unlocks Shulena as a temporary party member.",
+        "mechanicsEnemiesBoss": "Ball game: a team mini-game with timing passes and tackles. Antidote crafting: two-station puzzle, Tilda (analysis) and Shulena (herbs) in a timer. Pyramid climb: traversal with trap platforms. Boss: the pyramid's face."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 15,
+      "id": "ch15",
+      "episodeTitle": "In the Belly of Egokhan",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "Inside the Egokhan pyramid",
+      "coreMechanic": "Four-element gauntlet and the party rescue",
+      "setPiece": "Egokhan's pursuit through ice, wind, water and fire",
+      "storyBeats": "Inside the Egokhan-shaped pyramid, Farhat is hounded by the demon and swept through the primordial elements: ice, wind, water and fire. A rivalry grows between Tilda and Shulena, both attracted to Farhat. In the end Tilda finds the key, and everyone, Shulena included, contributes to saving the chosen one. The fourth fragment is retrieved by the end of the Mexican arc [I].",
+      "sceneName": "Ch15_InTheBellyOfEgokhan",
+      "locPrefix": "ch15.",
+      "objectives": [
+        {
+          "id": "ch15.survive-ice",
+          "tier": 1,
+          "text": "Survive the ice chamber"
+        },
+        {
+          "id": "ch15.survive-wind",
+          "tier": 1,
+          "text": "Survive the wind chamber"
+        },
+        {
+          "id": "ch15.survive-water",
+          "tier": 1,
+          "text": "Survive the water chamber"
+        },
+        {
+          "id": "ch15.survive-fire",
+          "tier": 1,
+          "text": "Survive the fire chamber"
+        },
+        {
+          "id": "ch15.collect-fragment-4",
+          "tier": 2,
+          "text": "Collect the fourth fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.4",
+        "meter.tier2",
+        "hearts.plus1.ch15"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Inside the Egokhan-shaped pyramid, Farhat is hounded by the demon and swept through the primordial elements: ice, wind, water and fire. A rivalry grows between Tilda and Shulena, both attracted to Farhat. In the end Tilda finds the key, and everyone, Shulena included, contributes to saving the chosen one. The fourth fragment is retrieved by the end of the Mexican arc [I].",
+        "levelAndObjectives": "Four elemental chambers in sequence, then a combined rescue. Objectives: survive each element, find the key, reach the fragment.",
+        "mechanicsEnemiesBoss": "One mechanic per element: ice (sliding and traction), wind (gliding and gusts), water (swimming and currents), fire (heat vents and timing). Rescue segment: the player controls Tilda and Shulena at separate stations to feed solutions to Farhat. Boss: Egokhan in pursuit, a chase, not a fight.",
+        "failStates": "Health failure; element hazards (freezing, drowning, burning) reset to the chamber start.",
+        "cutscenesAndUnlocks": "The pyramid swallowing scene, the Tilda and Shulena exchange, the fragment cutscene. Unlocks light-meter tier two and the fourth fragment."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": [
+        "fragment.4"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "ch16",
+      "episodeTitle": "Under Siege",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Defence",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Wave defence with gadgets and potions",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "Unconfirmed. Title suggests a defence or siege.",
+      "sceneName": "Ch16_UnderSiege",
+      "locPrefix": "ch16.",
+      "objectives": [
+        {
+          "id": "ch16.prepare-defence",
+          "tier": 1,
+          "text": "Prepare the defence"
+        },
+        {
+          "id": "ch16.hold-position",
+          "tier": 1,
+          "text": "Hold the position"
+        },
+        {
+          "id": "ch16.end-siege",
+          "tier": 2,
+          "text": "End the siege"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Unconfirmed. Title suggests a defence or siege.",
+        "levelAndObjectives": "Provisional design: a defence chapter where the group holds a position, in a location confirmed in the episode check.",
+        "mechanicsEnemiesBoss": "Wave defence, gadget placement (Tilda), alchemy support (Wings).",
+        "failStates": "Objective failure if the position falls; health failure.",
+        "cutscenesAndUnlocks": "Written after the episode check."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 17,
+      "id": "ch17",
+      "episodeTitle": "The Call of Queen Dolunai",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "Flight toward England, labyrinth and vortex, surface battle",
+      "coreMechanic": "Impulse trap choice and parallel robot battle",
+      "setPiece": "Rashid's giant robot",
+      "storyBeats": "Egokhan pretends to be ill, giving Dolunai the chance to escape the vortex that holds her. As Farhat and his companions near England for the fifth appointment with the crystal, he receives a telepathic call from his mother. Against the",
+      "sceneName": "Ch17_TheCallOfQueenDolunai",
+      "locPrefix": "ch17.",
+      "objectives": [
+        {
+          "id": "ch17.receive-call",
+          "tier": 1,
+          "text": "Receive the telepathic call"
+        },
+        {
+          "id": "ch17.cross-labyrinth",
+          "tier": 1,
+          "text": "Cross the labyrinth and vortex"
+        },
+        {
+          "id": "ch17.defeat-giant-robot",
+          "tier": 1,
+          "text": "Defeat the giant robot as Wings and Tilda"
+        },
+        {
+          "id": "ch17.rejoin-group",
+          "tier": 2,
+          "text": "Rejoin the group"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "ImpulseTrap",
+          "checkpointId": "mid",
+          "lockShadowNextArea": true,
+          "resourceLoss": 1,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "goal.seven-fragments"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Egokhan pretends to be ill, giving Dolunai the chance to escape the vortex that holds her. As Farhat and his companions near England for the fifth appointment with the crystal, he receives a telepathic call from his mother. Against the",
+        "levelAndObjectives": "Mid-flight decision scene, a labyrinth and vortex, and a parallel robot battle on the surface. Objectives: decide to turn back, cross the labyrinth, escape, rejoin the group.",
+        "failStates": "Impulse trap penalty; health failure; labyrinth timer if the vortex closes.",
+        "cutscenesAndUnlocks": "The telepathic call, the parents' sacrifice. Locks in the player-facing goal of seven fragments.",
+        "mechanicsEnemiesBoss": "The impulse trap: the player is offered the cautious option (keep going) and the impulsive one (turn back). The story proceeds as in the show either way, but choosing the impulsive route costs a resource and locks the Shadow for the labyrinth (section 7). Parallel play: control Wings and Tilda against the giant robot while Farhat navigates the labyrinth. Boss: Rashid's giant robot (multi-phase)."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 18,
+      "id": "ch18",
+      "episodeTitle": "Trap of Smoke",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Chase",
+      "location": "English moor, Stonehenge",
+      "coreMechanic": "Fog chase and stone-circle puzzle",
+      "setPiece": "Mechanical bulldog",
+      "storyBeats": "In England, Tilda is reunited with her beloved father Nigel. The friends continue to Stonehenge to retrieve the fifth fragment, but Rashid chases them across a foggy moor with a mechanical bulldog and Egokhan turns the stones into a hellish trap. They fight on with the help of Nigel and a Miss Keyhole nobody recognises. Farhat retrieves the fragment at the last moment and saves Stonehenge from a diabolical spell.",
+      "sceneName": "Ch18_TrapOfSmoke",
+      "locPrefix": "ch18.",
+      "objectives": [
+        {
+          "id": "ch18.meet-nigel",
+          "tier": 1,
+          "text": "Reunite Tilda with Nigel"
+        },
+        {
+          "id": "ch18.cross-moor",
+          "tier": 1,
+          "text": "Cross the foggy moor"
+        },
+        {
+          "id": "ch18.solve-stone-circle",
+          "tier": 1,
+          "text": "Align the stones before the trap closes"
+        },
+        {
+          "id": "ch18.collect-fragment-5",
+          "tier": 2,
+          "text": "Collect the fifth fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Chase",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.5",
+        "meter.tier3"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "In England, Tilda is reunited with her beloved father Nigel. The friends continue to Stonehenge to retrieve the fifth fragment, but Rashid chases them across a foggy moor with a mechanical bulldog and Egokhan turns the stones into a hellish trap. They fight on with the help of Nigel and a Miss Keyhole nobody recognises. Farhat retrieves the fragment at the last moment and saves Stonehenge from a diabolical spell.",
+        "levelAndObjectives": "Fog moor chase, then the stone circle. Objectives: reach Stonehenge, survive the moor, solve the circle, take the fragment.",
+        "mechanicsEnemiesBoss": "Fog visibility chase against the mechanical bulldog (boss). Stone-circle puzzle: align stones with light, timed against the trap. Nigel helps with tools, and the disguised Miss Keyhole is an optional ally to spot.",
+        "failStates": "Caught by the bulldog (restart chase section); puzzle timer expires; health failure.",
+        "cutscenesAndUnlocks": "Tilda and Nigel's reunion, Miss Keyhole's cameo. Fifth fragment; light-meter tier three."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 19,
+      "id": "ch19",
+      "episodeTitle": "Homeless",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Hub",
+      "location": "Oxford lab, cousin camp, volcano crater",
+      "coreMechanic": "Hub upgrades and a volcano climb",
+      "setPiece": "Egokhan's lava creature",
+      "storyBeats": "Farhat and friends dodge one of Rashid's scorching attacks. Tilda goes back to Oxford, wins back the trust of Miss Keyhole and the other professors, and with their help gets a new supercomputer. Ben reunites all his scattered cousins, and with them builds a new, more modern foldable tent. His Japanese cousin Ben Saburo gives him a deadly frying-pan katana. Farhat goes with Wings to collect the primitive alchemical plant on which all potions are based. It grows only in the crater of a dangerous volcano, which is exactly where Egokhan will strike.",
+      "sceneName": "Ch19_Homeless",
+      "locPrefix": "ch19.",
+      "objectives": [
+        {
+          "id": "ch19.upgrade-lab",
+          "tier": 1,
+          "text": "Upgrade the Oxford lab"
+        },
+        {
+          "id": "ch19.unite-cousins",
+          "tier": 1,
+          "text": "Reunite Ben's cousins and build the tent"
+        },
+        {
+          "id": "ch19.climb-volcano",
+          "tier": 1,
+          "text": "Climb the volcano"
+        },
+        {
+          "id": "ch19.gather-base-plant",
+          "tier": 2,
+          "text": "Gather the base plant"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "plant.base",
+        "gadget.supercomputer",
+        "camp.foldable-tent"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Farhat and friends dodge one of Rashid's scorching attacks. Tilda goes back to Oxford, wins back the trust of Miss Keyhole and the other professors, and with their help gets a new supercomputer. Ben reunites all his scattered cousins, and with them builds a new, more modern foldable tent. His Japanese cousin Ben Saburo gives him a deadly frying-pan katana. Farhat goes with Wings to collect the primitive alchemical plant on which all potions are based. It grows only in the crater of a dangerous volcano, which is exactly where Egokhan will strike.",
+        "levelAndObjectives": "Hub chapter with three threads: Oxford lab (Tilda), cousin gathering (Ben), volcano climb (Farhat and Wings).",
+        "mechanicsEnemiesBoss": "Hub management (upgrade the supercomputer and tent), the volcano climb with lava hazards, the gathering of the base plant, a boss encounter with Egokhan's lava creature. Side activity: Ben Saburo's frying-pan katana unlock.",
+        "failStates": "Lava and heat hazards (reset to last ledge); health failure; objective failure if the plant is destroyed.",
+        "cutscenesAndUnlocks": "Tilda at Oxford, the cousins' reunion, the katana gift. Unlocks the base plant (all potions at tier two), the supercomputer (new Decode tier) and the foldable tent (new camp)."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 20,
+      "id": "ch20",
+      "episodeTitle": "Ben's Betrayal",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Rescue",
+      "location": "Hellfire abyss, secret meeting",
+      "coreMechanic": "Emotional choice, chase, cousin rescue",
+      "setPiece": "Hellfire trap apparatus",
+      "storyBeats": "Egokhan and Rashid trap Ben's cousins over an abyss of hellfire. Egokhan appears privately and offers a trade: the Shariman fragments for the cousins' lives. Ben steals the crystals, even though they are fakes, from Farhat in order to save his cousins. Everything looks like a disaster, with the crystal and the cousins lost, but Farhat, who can smell when something is wrong, devises a countermeasure. (Full resolution confirmed in the episode check.)",
+      "sceneName": "Ch20_BenSBetrayal",
+      "locPrefix": "ch20.",
+      "objectives": [
+        {
+          "id": "ch20.witness-meeting",
+          "tier": 1,
+          "text": "Witness Ben's secret meeting"
+        },
+        {
+          "id": "ch20.chase-ben",
+          "tier": 1,
+          "text": "Chase Ben"
+        },
+        {
+          "id": "ch20.rescue-cousins",
+          "tier": 1,
+          "text": "Rescue the cousins in time"
+        },
+        {
+          "id": "ch20.restore-trust",
+          "tier": 2,
+          "text": "Restore trust with Ben"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "cousins.bonus"
+      ],
+      "bibleTag": "V/I",
+      "spec": {
+        "storyBeats": "Egokhan and Rashid trap Ben's cousins over an abyss of hellfire. Egokhan appears privately and offers a trade: the Shariman fragments for the cousins' lives. Ben steals the crystals, even though they are fakes, from Farhat in order to save his cousins. Everything looks like a disaster, with the crystal and the cousins lost, but Farhat, who can smell when something is wrong, devises a countermeasure. (Full resolution confirmed in the episode check.)",
+        "levelAndObjectives": "Secret-meeting scene, the theft, the chase after Ben, the hellfire abyss rescue.",
+        "failStates": "Objective failure if cousins fall (reset segment); health failure.",
+        "cutscenesAndUnlocks": "Ben's confession, the fake-crystal reveal. Restores trust with a cousins bonus.",
+        "mechanicsEnemiesBoss": "Emotional decision: the player chooses how to confront Ben (anger, kindness, silence), a tone choice only. Chase and rescue with a time-limited cousin-rescue segment. Boss: Egokhan's trap apparatus."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 21,
+      "id": "ch21",
+      "episodeTitle": "The Duellers",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "Road to the sixth fragment, duel arena",
+      "coreMechanic": "Mounted duel with a scanner-revealed trap",
+      "setPiece": "Robotic horseman",
+      "storyBeats": "The friends are on their way to retrieve the sixth fragment. Rashid and Egokhan team up to stop them, and Egokhan sends a robotic horseman to challenge Farhat to a duel. Tilda unmasks the villains' plan and rescues Farhat from a deadly trap, urging him to keep going for the sixth fragment.",
+      "sceneName": "Ch21_TheDuellers",
+      "locPrefix": "ch21.",
+      "objectives": [
+        {
+          "id": "ch21.accept-duel",
+          "tier": 1,
+          "text": "Accept the duel"
+        },
+        {
+          "id": "ch21.reveal-trap",
+          "tier": 1,
+          "text": "Use Tilda's scanner to reveal the trap"
+        },
+        {
+          "id": "ch21.defeat-horseman",
+          "tier": 1,
+          "text": "Defeat the robotic horseman"
+        },
+        {
+          "id": "ch21.collect-fragment-6",
+          "tier": 2,
+          "text": "Collect the sixth fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.6",
+        "hearts.plus1.ch21"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "The friends are on their way to retrieve the sixth fragment. Rashid and Egokhan team up to stop them, and Egokhan sends a robotic horseman to challenge Farhat to a duel. Tilda unmasks the villains' plan and rescues Farhat from a deadly trap, urging him to keep going for the sixth fragment.",
+        "levelAndObjectives": "A road to the fragment, a duel arena with a hidden trap, the fragment site.",
+        "failStates": "Health failure; falling into the trap (reset to the start of the phase).",
+        "cutscenesAndUnlocks": "The challenge, Tilda's reveal. Sixth fragment.",
+        "mechanicsEnemiesBoss": "Mounted duel: a lance-and-sword horseback fight against the robotic horseman. Tilda's scanner reveals the trap's weak point in the mid-fight, which the player exploits. Boss: the robotic horseman (three phases)."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 22,
+      "id": "ch22",
+      "episodeTitle": "A Rose for Ali",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Trek",
+      "location": "Zenem's tower, Ar Rimal desert",
+      "coreMechanic": "Tower climb, draining-health trek, weather puzzle",
+      "setPiece": "Egokhan's storm",
+      "storyBeats": "Even an eternalised scorpion wears down with the years. Farhat and his friends journey toward Zenem's tower, pursued by the villains, and find the ancient immortality formula, which calls for a certain rose in the heart of a most arid place called Ar Rimal. The rose needs a rain shower, which seems impossible, until an apparition of Dolunai reminds Farhat that the desert rose is actually a stone. With a grand strategy he brings rain, by way of Egokhan, and saves Wings. Meanwhile Ben hits his head during a clash.",
+      "sceneName": "Ch22_ARoseForAli",
+      "locPrefix": "ch22.",
+      "objectives": [
+        {
+          "id": "ch22.climb-tower",
+          "tier": 1,
+          "text": "Climb Zenem's tower"
+        },
+        {
+          "id": "ch22.cross-ar-rimal",
+          "tier": 1,
+          "text": "Cross Ar Rimal before Wings's health runs out"
+        },
+        {
+          "id": "ch22.make-rain",
+          "tier": 1,
+          "text": "Make rain with Egokhan's storm"
+        },
+        {
+          "id": "ch22.save-wings",
+          "tier": 2,
+          "text": "Save Wings"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "potion.weather"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Even an eternalised scorpion wears down with the years. Farhat and his friends journey toward Zenem's tower, pursued by the villains, and find the ancient immortality formula, which calls for a certain rose in the heart of a most arid place called Ar Rimal. The rose needs a rain shower, which seems impossible, until an apparition of Dolunai reminds Farhat that the desert rose is actually a stone. With a grand strategy he brings rain, by way of Egokhan, and saves Wings. Meanwhile Ben hits his head during a clash.",
+        "levelAndObjectives": "Tower ascent, an Ar Rimal desert trek, a rain puzzle.",
+        "mechanicsEnemiesBoss": "Tower climb with Zenem's tablets. Desert trek with a Wings health meter that drains. Weather puzzle: Farhat brews and plants a rain-making strategy while using Egokhan's own storm against him. Boss: Egokhan's storm.",
+        "failStates": "Wings's health meter reaches zero (objective failure, with a soft reset); health failure.",
+        "cutscenesAndUnlocks": "Dolunai's apparition, the rain, Wings restored. Unlocks the Weather potion."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 23,
+      "id": "ch23",
+      "episodeTitle": "Ben's Wrath",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Chase",
+      "location": "Twisted canyons",
+      "coreMechanic": "Canyon wind traversal and power suppression",
+      "setPiece": "Egokhan in the canyon",
+      "storyBeats": "Ben has hit his head and lost his memory. Farhat follows him deep into twisted canyons, where Egokhan attacks and suppresses the power of the crystals Farhat carries. Ben nevertheless overturns the harm done in the clash, though he still cannot recall who he is. Farhat's Shadow supplies a comical solution to help bring his memory back.",
+      "sceneName": "Ch23_BenSWrath",
+      "locPrefix": "ch23.",
+      "objectives": [
+        {
+          "id": "ch23.follow-ben",
+          "tier": 1,
+          "text": "Follow Ben through the canyons"
+        },
+        {
+          "id": "ch23.survive-suppression",
+          "tier": 1,
+          "text": "Survive the suppression zone"
+        },
+        {
+          "id": "ch23.restore-ben",
+          "tier": 2,
+          "text": "Restore Ben's memory"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "ben.restored"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Ben has hit his head and lost his memory. Farhat follows him deep into twisted canyons, where Egokhan attacks and suppresses the power of the crystals Farhat carries. Ben nevertheless overturns the harm done in the clash, though he still cannot recall who he is. Farhat's Shadow supplies a comical solution to help bring his memory back.",
+        "levelAndObjectives": "Twisted canyons, wind, a suppression zone. Objectives: follow Ben, survive Egokhan's attack, restore Ben.",
+        "mechanicsEnemiesBoss": "Wind-driven canyon traversal. Power suppression: the light meter and Shadow are disabled in the zone. Ben (amnesiac) fights alongside as an unpredictable ally. Boss: Egokhan in the canyon.",
+        "failStates": "Health failure; objective failure if Ben is lost in the canyon.",
+        "cutscenesAndUnlocks": "Ben's confusion, the Shadow's comic recovery. Restores Ben."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 24,
+      "id": "ch24",
+      "episodeTitle": "Zenem's Heritage",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Lore",
+      "location": "Zenem site",
+      "coreMechanic": "Tablet decoding and a guardian encounter",
+      "setPiece": "Seventh fragment",
+      "storyBeats": "Unconfirmed. Title points to the legacy of the sage Zenem; the seventh fragment is probably recovered here or just before chapter 25 (the seven are united at its start).",
+      "sceneName": "Ch24_ZenemSHeritage",
+      "locPrefix": "ch24.",
+      "objectives": [
+        {
+          "id": "ch24.decode-tablets",
+          "tier": 1,
+          "text": "Decode Zenem's tablets"
+        },
+        {
+          "id": "ch24.beat-guardian",
+          "tier": 1,
+          "text": "Defeat the site guardian"
+        },
+        {
+          "id": "ch24.collect-fragment-7",
+          "tier": 2,
+          "text": "Collect the seventh fragment"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "fragment.7"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "Unconfirmed. Title points to the legacy of the sage Zenem; the seventh fragment is probably recovered here or just before chapter 25 (the seven are united at its start).",
+        "levelAndObjectives": "Provisional design: lore chapter at a Zenem site, with the seventh fragment.",
+        "mechanicsEnemiesBoss": "Tablet decoding, tower puzzle, a guardian encounter.",
+        "failStates": "Puzzle failure; health failure.",
+        "cutscenesAndUnlocks": "Written after the episode check. Seventh fragment [I]."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": [
+        "fragment.7"
+      ]
+    },
+    {
+      "number": 25,
+      "id": "ch25",
+      "episodeTitle": "Nigel Trapped",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Escape",
+      "location": "Desert, English coal mine",
+      "coreMechanic": "Hiding puzzle, mine escape against rising magma, bird chase as the Shadow",
+      "setPiece": "Magma flood",
+      "storyBeats": "The seven pieces of the crystal are united and the Shariman shines. Farhat prepares to face Egokhan, but the demon makes a diversion by sealing Nigel in the shaft of an English mine. Tilda finds out and urges her friends to save him. Before leaving, Farhat hides the Shariman in the desert sand. In England the friends reach Nigel in the coal mine while Egokhan tries to stop them with red-hot magma, and Wings comes to the rescue. Back in the desert, Farhat finds the crystal gone; Tilda realises a bird has stolen it. Farhat's Shadow chases the thief while the others escape Egokhan, who is driven by Rashid, in a spectacular way.",
+      "sceneName": "Ch25_NigelTrapped",
+      "locPrefix": "ch25.",
+      "objectives": [
+        {
+          "id": "ch25.hide-shariman",
+          "tier": 1,
+          "text": "Hide the Shariman in the desert"
+        },
+        {
+          "id": "ch25.rescue-nigel",
+          "tier": 1,
+          "text": "Rescue Nigel from the mine"
+        },
+        {
+          "id": "ch25.chase-bird",
+          "tier": 1,
+          "text": "Chase the bird as the Shadow"
+        },
+        {
+          "id": "ch25.recover-shariman",
+          "tier": 2,
+          "text": "Recover the Shariman"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "meter.max",
+        "hearts.plus1.ch25"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "The seven pieces of the crystal are united and the Shariman shines. Farhat prepares to face Egokhan, but the demon makes a diversion by sealing Nigel in the shaft of an English mine. Tilda finds out and urges her friends to save him. Before leaving, Farhat hides the Shariman in the desert sand. In England the friends reach Nigel in the coal mine while Egokhan tries to stop them with red-hot magma, and Wings comes to the rescue. Back in the desert, Farhat finds the crystal gone; Tilda realises a bird has stolen it. Farhat's Shadow chases the thief while the others escape Egokhan, who is driven by Rashid, in a spectacular way.",
+        "levelAndObjectives": "Three parts: hide the Shariman, coal mine rescue, bird chase and escape.",
+        "mechanicsEnemiesBoss": "Hiding puzzle (choose and disguise the spot). Mine escape with magma rising (a rising hazard). Bird chase: the player controls the Shadow in a flight-chase after the thief while the party fights Egokhan and Rashid. Boss: magma flood.",
+        "failStates": "Magma reaches the player (reset to a safe point); the bird escapes (retry); objective failure if Nigel is lost.",
+        "cutscenesAndUnlocks": "The united Shariman, the diversion, the bird reveal. Maximum light meter form."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 26,
+      "id": "ch26",
+      "episodeTitle": "The Triumph of the Light",
+      "season": 1,
+      "part": 1,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "The great maze, epilogue in the Emirates",
+      "coreMechanic": "Callback gauntlet, non-lethal parent encounter, final boss",
+      "setPiece": "Charmed parents then Egokhan",
+      "storyBeats": "Farhat and his companions head for a great maze to face Egokhan one last time. After a fierce battle Farhat is the last one standing against his enemy, who has prepared a cruel final challenge. Egokhan has charmed Farhat's parents and made them guardians of the labyrinth, ready to die to block their son. Farhat will not hurt them, but Yassir and Dolunai fall lifeless. Overcome by grief, he hurls himself at Egokhan. The clash is tremendous and Farhat finally takes the Shariman from the place where Egokhan removed it seven thousand years ago. His parents come back to life, Rashid is defeated, arrested and sent to jail, and the Shariman proves to be the heart and fuel source of an ancient machine that brings life to the desert with clean, everlasting energy.",
+      "sceneName": "Ch26_TheTriumphOfTheLight",
+      "locPrefix": "ch26.",
+      "objectives": [
+        {
+          "id": "ch26.cross-maze",
+          "tier": 1,
+          "text": "Cross the five-stage maze"
+        },
+        {
+          "id": "ch26.free-parents",
+          "tier": 1,
+          "text": "Free the parents with light, not force"
+        },
+        {
+          "id": "ch26.defeat-egokhan",
+          "tier": 1,
+          "text": "Defeat Egokhan"
+        },
+        {
+          "id": "ch26.arrest-rashid",
+          "tier": 2,
+          "text": "Arrest Rashid"
+        },
+        {
+          "id": "ch26.restore-desert",
+          "tier": 3,
+          "text": "Restore the desert's energy"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "part1.complete",
+        "chapter-select"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Farhat and his companions head for a great maze to face Egokhan one last time. After a fierce battle Farhat is the last one standing against his enemy, who has prepared a cruel final challenge. Egokhan has charmed Farhat's parents and made them guardians of the labyrinth, ready to die to block their son. Farhat will not hurt them, but Yassir and Dolunai fall lifeless. Overcome by grief, he hurls himself at Egokhan. The clash is tremendous and Farhat finally takes the Shariman from the place where Egokhan removed it seven thousand years ago. His parents come back to life, Rashid is defeated, arrested and sent to jail, and the Shariman proves to be the heart and fuel source of an ancient machine that brings life to the desert with clean, everlasting energy.",
+        "levelAndObjectives": "A five-stage labyrinth (each stage a callback to an earlier chapter), the parents' encounter, the final confrontation, the epilogue in the Emirates.",
+        "mechanicsEnemiesBoss": "Gauntlet of callbacks (quicksand, element rooms, balloon sections shortened). The parents encounter: a non-lethal boss where the player must evade and use the light meter to break the spell instead of attacking. Final boss: Egokhan, multi-phase, using every element. Rashid's capture is a short chase.",
+        "failStates": "Health failure; the player cannot defeat the parents (an attack is disabled), so any attempt to hit them resets the section; objective failure if the party falls.",
+        "cutscenesAndUnlocks": "The parents fall, the revival, Rashid's arrest, the machine reveal. Ends Part One and unlocks Chapter Select and New Game Plus."
+      },
+      "sourceDocSection": "references/bible/10-season-1-chapters-part-one.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 27,
+      "id": "ch27",
+      "episodeTitle": "Too Light",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "A",
+      "chapterType": "Hub",
+      "location": "Emirates, dream world seven thousand years ago",
+      "coreMechanic": "Dream travel with shifting layouts",
+      "setPiece": "Threshold guardian",
+      "storyBeats": "the friends live happily in the Emirates thanks to the Shariman's energy; to understand where the crystals come from they plan a journey through the world of dreams to a place seven thousand years in the past.",
+      "sceneName": "Ch27_TooLight",
+      "locPrefix": "ch27.",
+      "objectives": [
+        {
+          "id": "ch27.explore-new-emirates",
+          "tier": 1,
+          "text": "Explore the Emirates powered by the Shariman"
+        },
+        {
+          "id": "ch27.enter-dream-world",
+          "tier": 1,
+          "text": "Enter the dream world"
+        },
+        {
+          "id": "ch27.reach-the-past",
+          "tier": 2,
+          "text": "Reach the place seven thousand years back"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "season2.start",
+        "hub.emirates-s2"
+      ],
+      "bibleTag": "V/I",
+      "spec": {
+        "storyBeats": "the friends live happily in the Emirates thanks to the Shariman's energy; to understand where the crystals come from they plan a journey through the world of dreams to a place seven thousand years in the past.",
+        "design": "clean-energy city hub with new gadgets; the dream journey as a surreal level where layouts shift; no combat boss, a threshold guardian.",
+        "failAndUnlocks": "puzzle failure only; unlocks the Season 2 hub, the dream-travel mechanic and Namirash lore."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 28,
+      "id": "ch28",
+      "episodeTitle": "The Genius",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Cold region",
+      "coreMechanic": "Twin-genius co-op puzzle",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "the Italian title means the genius from the cold; a Siberian genius arrives, matching Laylah's profile.",
+      "sceneName": "Ch28_TheGenius",
+      "locPrefix": "ch28.",
+      "objectives": [
+        {
+          "id": "ch28.reach-snowfield",
+          "tier": 1,
+          "text": "Reach the snowfield"
+        },
+        {
+          "id": "ch28.solve-twin-puzzle",
+          "tier": 1,
+          "text": "Solve the twin-genius puzzle"
+        },
+        {
+          "id": "ch28.brew-with-laylah",
+          "tier": 2,
+          "text": "Brew with Laylah"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "party.laylah"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the Italian title means the genius from the cold; a Siberian genius arrives, matching Laylah's profile.",
+        "design": "snowfield approach, twin-genius co-op puzzle between Tilda and Laylah, first alchemy session with Laylah.",
+        "failAndUnlocks": "puzzle failure; unlocks Laylah as a party member."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 29,
+      "id": "ch29",
+      "episodeTitle": "The Keepers of Ashtarak",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Hub",
+      "location": "Ashtarak mountain temple",
+      "coreMechanic": "Guardian trials and the grain mechanic",
+      "setPiece": "Rashid named Guardian",
+      "storyBeats": "Rashid, turned good, becomes a Guardian ofAshtarak, the requirement for pulverising the Shariman to close the black holes.",
+      "sceneName": "Ch29_TheKeepersOfAshtarak",
+      "locPrefix": "ch29.",
+      "objectives": [
+        {
+          "id": "ch29.reach-ashtarak",
+          "tier": 1,
+          "text": "Reach Ashtarak"
+        },
+        {
+          "id": "ch29.pass-trials",
+          "tier": 1,
+          "text": "Pass the three guardian trials"
+        },
+        {
+          "id": "ch29.name-guardian",
+          "tier": 2,
+          "text": "See Rashid named Guardian"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Stealth",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "resource.grain",
+        "ally.rashid"
+      ],
+      "bibleTag": "V/I",
+      "spec": {
+        "storyBeats": "Rashid, turned good, becomes a Guardian ofAshtarak, the requirement for pulverising the Shariman to close the black holes.",
+        "design": "mountain-temple hub, three trials that Rashid must pass with comic results, teaches the grain mechanic.",
+        "failAndUnlocks": "trial failure resets that trial; unlocks the grain resource and Rashid as an ally."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 30,
+      "id": "ch30",
+      "episodeTitle": "A Hero's Fall",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Challenge",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Limited-ability chapter carried by companions",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; the title points to a setback for Farhat.",
+      "sceneName": "Ch30_AHeroSFall",
+      "locPrefix": "ch30.",
+      "objectives": [
+        {
+          "id": "ch30.rely-on-companions",
+          "tier": 1,
+          "text": "Rely on the companions"
+        },
+        {
+          "id": "ch30.recover-abilities",
+          "tier": 2,
+          "text": "Recover Farhat's abilities"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the title points to a setback for Farhat.",
+        "design": "a chapter where Farhat's abilities are limited and companions carry key sections.",
+        "failAndUnlocks": "health failure; a temporary ability lock."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 31,
+      "id": "ch31",
+      "episodeTitle": "Upside Down",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "First Namirash zone",
+      "coreMechanic": "Reversed controls and gravity",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "the Namirash's reversing influence is established across the season [V]; this chapter's exact events are unconfirmed.",
+      "sceneName": "Ch31_UpsideDown",
+      "locPrefix": "ch31.",
+      "objectives": [
+        {
+          "id": "ch31.enter-namirash-zone",
+          "tier": 1,
+          "text": "Enter the Namirash zone"
+        },
+        {
+          "id": "ch31.cross-reversed-area",
+          "tier": 1,
+          "text": "Cross the reversed area"
+        },
+        {
+          "id": "ch31.get-anti-reversal",
+          "tier": 2,
+          "text": "Obtain the anti-reversal light item"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "item.anti-reversal"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the Namirash's reversing influence is established across the season [V]; this chapter's exact events are unconfirmed.",
+        "design": "first Namirash zone with reversed controls and gravity.",
+        "failAndUnlocks": "corruption failure; unlocks the light item that cancels reversal."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 32,
+      "id": "ch32",
+      "episodeTitle": "The Cursed Keeper",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Boss",
+      "location": "Ashtarak",
+      "coreMechanic": "Non-lethal cleansing boss",
+      "setPiece": "Cursed Guardian",
+      "storyBeats": "a Guardian ofAshtarak is cursed (from the title).",
+      "sceneName": "Ch32_TheCursedKeeper",
+      "locPrefix": "ch32.",
+      "objectives": [
+        {
+          "id": "ch32.find-keeper",
+          "tier": 1,
+          "text": "Find the cursed Guardian"
+        },
+        {
+          "id": "ch32.cleanse-keeper",
+          "tier": 1,
+          "text": "Cleanse the Guardian with light"
+        },
+        {
+          "id": "ch32.leave-ashtarak",
+          "tier": 2,
+          "text": "Leave Ashtarak"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "technique.cleanse"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "a Guardian ofAshtarak is cursed (from the title).",
+        "design": "non-lethal boss, the cursed Guardian, freed by light rather than defeated.",
+        "failAndUnlocks": "health failure; unlocks the cleansing technique."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 33,
+      "id": "ch33",
+      "episodeTitle": "The Temple of the Black Scorpion",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "SetPiece",
+      "location": "Chinese desert, temple, Beijing Olympic stadium",
+      "coreMechanic": "Desert trek, temple trial, black-hole closing",
+      "setPiece": "Stadium black hole",
+      "storyBeats": "Tilda identifies an ancient site in the Chinese deserts where the crystal is supposed to be hidden, but she is wrong. After a thousand adventures the friends reach the Olympic stadium, where a magical black hole has opened. Farhat is helpless against it and must find the Shariman to stop the darkness destroying the city.",
+      "sceneName": "Ch33_TheTempleOfTheBlackScorpion",
+      "locPrefix": "ch33.",
+      "objectives": [
+        {
+          "id": "ch33.trek-desert",
+          "tier": 1,
+          "text": "Trek through the Chinese desert"
+        },
+        {
+          "id": "ch33.pass-temple",
+          "tier": 1,
+          "text": "Pass the temple trial"
+        },
+        {
+          "id": "ch33.reach-stadium",
+          "tier": 1,
+          "text": "Reach the stadium"
+        },
+        {
+          "id": "ch33.close-black-hole",
+          "tier": 2,
+          "text": "Close the black hole with the Shariman grain"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "system.black-hole-closing"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Tilda identifies an ancient site in the Chinese deserts where the crystal is supposed to be hidden, but she is wrong. After a thousand adventures the friends reach the Olympic stadium, where a magical black hole has opened. Farhat is helpless against it and must find the Shariman to stop the darkness destroying the city.",
+        "design": "desert trek, temple trial, stadium finale in which the sword is useless against the void and only the light and grain work.",
+        "failAndUnlocks": "health failure; stadium timer; unlocks black-hole closing."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 34,
+      "id": "ch34",
+      "episodeTitle": "Games Gone Crazy",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Minigames",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Mini-game gauntlet with reversed rules",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; the title points to games or contests running out of control.",
+      "sceneName": "Ch34_GamesGoneCrazy",
+      "locPrefix": "ch34.",
+      "objectives": [
+        {
+          "id": "ch34.play-games",
+          "tier": 1,
+          "text": "Play through the mini-games"
+        },
+        {
+          "id": "ch34.beat-reversal",
+          "tier": 2,
+          "text": "Beat the reversed rules"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "cosmetic.games"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the title points to games or contests running out of control.",
+        "design": "a mini-game gauntlet in which the rules reverse under the Namirash.",
+        "failAndUnlocks": "mini-game failure only; cosmetic unlocks."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 35,
+      "id": "ch35",
+      "episodeTitle": "Ben in Black",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Verified",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "Beijing Olympic stadium",
+      "coreMechanic": "Non-lethal boss and black-hole closing",
+      "setPiece": "Corrupted Ben",
+      "storyBeats": "Ben is corrupted by darkness and becomes Ben in Black; he returns to himself as soon as the black hole in the Beijing stadium is closed.",
+      "sceneName": "Ch35_BenInBlack",
+      "locPrefix": "ch35.",
+      "objectives": [
+        {
+          "id": "ch35.reach-core",
+          "tier": 1,
+          "text": "Reach the black hole's core"
+        },
+        {
+          "id": "ch35.free-ben",
+          "tier": 1,
+          "text": "Free Ben without hurting him"
+        },
+        {
+          "id": "ch35.close-hole",
+          "tier": 2,
+          "text": "Close the Beijing black hole"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "ben.restored-s2",
+        "cosmetic.ben-in-black"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "Ben is corrupted by darkness and becomes Ben in Black; he returns to himself as soon as the black hole in the Beijing stadium is closed.",
+        "design": "Ben as a non-lethal boss in the stadium; the player must reach the hole's core to close it.",
+        "failAndUnlocks": "health failure; unlocks the Ben-in-Black cosmetic and restores Ben."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 36,
+      "id": "ch36",
+      "episodeTitle": "The Spirit of the Forest",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Forest",
+      "coreMechanic": "Spirit puzzles and a Tilda and Nigel scene",
+      "setPiece": "Greta's tree",
+      "storyBeats": "the forest tree that holds Greta Swanson's spirit and advises Nigel [V]; this chapter's exact events are unconfirmed.",
+      "sceneName": "Ch36_TheSpiritOfTheForest",
+      "locPrefix": "ch36.",
+      "objectives": [
+        {
+          "id": "ch36.enter-forest",
+          "tier": 1,
+          "text": "Enter the forest"
+        },
+        {
+          "id": "ch36.solve-spirit-puzzles",
+          "tier": 1,
+          "text": "Solve the spirit puzzles"
+        },
+        {
+          "id": "ch36.meet-greta-spirit",
+          "tier": 2,
+          "text": "Meet Greta's spirit"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "npc.greta-spirit"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the forest tree that holds Greta Swanson's spirit and advises Nigel [V]; this chapter's exact events are unconfirmed.",
+        "design": "forest exploration, spirit puzzles, a gentle emotional chapter for Tilda and Nigel.",
+        "failAndUnlocks": "puzzle failure; unlocks Greta's spirit as an advice NPC."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 37,
+      "id": "ch37",
+      "episodeTitle": "The Apprentice",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Duel",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Alchemy duel between Laylah and Tilda",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "the Italian title means the sorcerer's apprentice; Laylah studies with Wings's potions, which later become black magic [V].",
+      "sceneName": "Ch37_TheApprentice",
+      "locPrefix": "ch37.",
+      "objectives": [
+        {
+          "id": "ch37.start-alchemy-duel",
+          "tier": 1,
+          "text": "Start the alchemy duel"
+        },
+        {
+          "id": "ch37.win-duel",
+          "tier": 2,
+          "text": "Win the duel"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the Italian title means the sorcerer's apprentice; Laylah studies with Wings's potions, which later become black magic [V].",
+        "design": "alchemy duel between Laylah and Tilda.",
+        "failAndUnlocks": "puzzle failure; unlocks Laylah's black-potion cutscene."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 38,
+      "id": "ch38",
+      "episodeTitle": "Battle in the Big Apple",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Chase",
+      "location": "New York rooftops and streets",
+      "coreMechanic": "City chase and black-hole closing",
+      "setPiece": "Black hole in New York",
+      "storyBeats": "New York is the setting of a black-hole battle; the last black hole is closed before the mountain refuge in chapter 39 [V].",
+      "sceneName": "Ch38_BattleInTheBigApple",
+      "locPrefix": "ch38.",
+      "objectives": [
+        {
+          "id": "ch38.chase-through-city",
+          "tier": 1,
+          "text": "Chase through the city"
+        },
+        {
+          "id": "ch38.close-ny-hole",
+          "tier": 2,
+          "text": "Close the New York black hole"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Chase",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "hub.new-york"
+      ],
+      "bibleTag": "V/I",
+      "spec": {
+        "storyBeats": "New York is the setting of a black-hole battle; the last black hole is closed before the mountain refuge in chapter 39 [V].",
+        "design": "rooftop and street chase, black-hole closing, aerial support from the ultra volatilla.",
+        "failAndUnlocks": "chase failure; unlocks the New York hub."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 39,
+      "id": "ch39",
+      "episodeTitle": "Tilda's Ghost",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Verified",
+      "costTier": "B",
+      "chapterType": "Hub",
+      "location": "Mountains north of New York",
+      "coreMechanic": "Camp hub and confrontation scene",
+      "setPiece": "Laylah banished",
+      "storyBeats": "the friends take refuge in the mountains north of New York after closing the last black hole. Tilda tells Farhat about Laylah's evil schemes and Farhat banishes Laylah from the group. Farhat learns of Laylah's plan to unite the powers of Light and Darkness forever.",
+      "sceneName": "Ch39_TildaSGhost",
+      "locPrefix": "ch39.",
+      "objectives": [
+        {
+          "id": "ch39.settle-camp",
+          "tier": 1,
+          "text": "Settle at the camp"
+        },
+        {
+          "id": "ch39.hear-tilda",
+          "tier": 1,
+          "text": "Hear Tilda's warning"
+        },
+        {
+          "id": "ch39.banish-laylah",
+          "tier": 2,
+          "text": "Decide about Laylah"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "laylah.antagonist"
+      ],
+      "bibleTag": "V",
+      "spec": {
+        "storyBeats": "the friends take refuge in the mountains north of New York after closing the last black hole. Tilda tells Farhat about Laylah's evil schemes and Farhat banishes Laylah from the group. Farhat learns of Laylah's plan to unite the powers of Light and Darkness forever.",
+        "design": "camp hub, a confrontation scene with tone choice only, Laylah's departure.",
+        "failAndUnlocks": "none; unlocks Laylah as antagonist."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 40,
+      "id": "ch40",
+      "episodeTitle": "Suspended in Limbo",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Limbo",
+      "coreMechanic": "Gravity-free limbo puzzles",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "the Italian title is feminine, so a female character is suspended; Tilda is the likely one (unconfirmed).",
+      "sceneName": "Ch40_SuspendedInLimbo",
+      "locPrefix": "ch40.",
+      "objectives": [
+        {
+          "id": "ch40.navigate-limbo",
+          "tier": 1,
+          "text": "Navigate limbo"
+        },
+        {
+          "id": "ch40.leave-limbo",
+          "tier": 2,
+          "text": "Leave limbo"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the Italian title is feminine, so a female character is suspended; Tilda is the likely one (unconfirmed).",
+        "design": "gravity-free limbo puzzles.",
+        "failAndUnlocks": "puzzle failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 41,
+      "id": "ch41",
+      "episodeTitle": "Red Alarm",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Defence",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Alert-and-defence chapter",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; an alert or emergency.",
+      "sceneName": "Ch41_RedAlarm",
+      "locPrefix": "ch41.",
+      "objectives": [
+        {
+          "id": "ch41.answer-alarm",
+          "tier": 1,
+          "text": "Answer the alarm"
+        },
+        {
+          "id": "ch41.hold-the-line",
+          "tier": 2,
+          "text": "Hold the line"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; an alert or emergency.",
+        "design": "alert-and-defence chapter.",
+        "failAndUnlocks": "objective failure; health failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 42,
+      "id": "ch42",
+      "episodeTitle": "The Mask Falls",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Boss",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Reveal and confrontation",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; a hidden identity or intent is revealed.",
+      "sceneName": "Ch42_TheMaskFalls",
+      "locPrefix": "ch42.",
+      "objectives": [
+        {
+          "id": "ch42.reach-reveal",
+          "tier": 1,
+          "text": "Reach the reveal"
+        },
+        {
+          "id": "ch42.face-confrontation",
+          "tier": 2,
+          "text": "Face the confrontation"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; a hidden identity or intent is revealed.",
+        "design": "reveal chapter with a confrontation.",
+        "failAndUnlocks": "health failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 43,
+      "id": "ch43",
+      "episodeTitle": "A Calm Weekend at Oxford",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "C",
+      "chapterType": "Rest",
+      "location": "Oxford",
+      "coreMechanic": "Free-roam hub with side activities",
+      "setPiece": "Rest chapter",
+      "storyBeats": "unconfirmed; the title points to a quiet interlude.",
+      "sceneName": "Ch43_ACalmWeekendAtOxford",
+      "locPrefix": "ch43.",
+      "objectives": [
+        {
+          "id": "ch43.roam-oxford",
+          "tier": 1,
+          "text": "Roam Oxford"
+        },
+        {
+          "id": "ch43.complete-side-stories",
+          "tier": 2,
+          "text": "Complete the side stories"
+        }
+      ],
+      "checkpointIds": [
+        "start"
+      ],
+      "failureRules": [],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the title points to a quiet interlude.",
+        "design": "free-roam Oxford hub, side stories, Tilda and Nigel scenes, optional collectibles.",
+        "failAndUnlocks": "none; rest and upgrade chapter."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 44,
+      "id": "ch44",
+      "episodeTitle": "Head to Head",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Duel",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Duel",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; a direct confrontation.",
+      "sceneName": "Ch44_HeadToHead",
+      "locPrefix": "ch44.",
+      "objectives": [
+        {
+          "id": "ch44.reach-arena",
+          "tier": 1,
+          "text": "Reach the arena"
+        },
+        {
+          "id": "ch44.win-duel",
+          "tier": 2,
+          "text": "Win the duel"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; a direct confrontation.",
+        "design": "a duel chapter.",
+        "failAndUnlocks": "health failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 45,
+      "id": "ch45",
+      "episodeTitle": "The Remaining Path",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Voice-guided path puzzles",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "the Italian title means the path of the voices that remain.",
+      "sceneName": "Ch45_TheRemainingPath",
+      "locPrefix": "ch45.",
+      "objectives": [
+        {
+          "id": "ch45.follow-voices",
+          "tier": 1,
+          "text": "Follow the voices"
+        },
+        {
+          "id": "ch45.finish-path",
+          "tier": 2,
+          "text": "Finish the path"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the Italian title means the path of the voices that remain.",
+        "design": "voice-guided path puzzles.",
+        "failAndUnlocks": "puzzle failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 46,
+      "id": "ch46",
+      "episodeTitle": "Sweet Coast",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "C",
+      "chapterType": "Rest",
+      "location": "Coast",
+      "coreMechanic": "Beach hub with a light-tone mini-game",
+      "setPiece": "Rest chapter",
+      "storyBeats": "unconfirmed; the Italian title means sweet riviera.",
+      "sceneName": "Ch46_SweetCoast",
+      "locPrefix": "ch46.",
+      "objectives": [
+        {
+          "id": "ch46.explore-coast",
+          "tier": 1,
+          "text": "Explore the coast"
+        },
+        {
+          "id": "ch46.finish-beach-minigame",
+          "tier": 2,
+          "text": "Finish the beach mini-game"
+        }
+      ],
+      "checkpointIds": [
+        "start"
+      ],
+      "failureRules": [],
+      "unlocks": [
+        "cosmetic.beach"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the Italian title means sweet riviera.",
+        "design": "beach hub with a lighter tone, an optional mini-game and a plot beat.",
+        "failAndUnlocks": "none."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 47,
+      "id": "ch47",
+      "episodeTitle": "A Possible World",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Puzzle",
+      "location": "Alternate world",
+      "coreMechanic": "Alternate-world puzzles",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; an alternate-world idea fits the Namirash theme.",
+      "sceneName": "Ch47_APossibleWorld",
+      "locPrefix": "ch47.",
+      "objectives": [
+        {
+          "id": "ch47.enter-alt-world",
+          "tier": 1,
+          "text": "Enter the alternate world"
+        },
+        {
+          "id": "ch47.return-home",
+          "tier": 2,
+          "text": "Return home"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Puzzle",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; an alternate-world idea fits the Namirash theme.",
+        "design": "alternate-world puzzles.",
+        "failAndUnlocks": "puzzle failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 48,
+      "id": "ch48",
+      "episodeTitle": "Heart of Darkness",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "A",
+      "chapterType": "SetPiece",
+      "location": "Darkness realm",
+      "coreMechanic": "Shadow-centred chapter that evolves the Shadow",
+      "setPiece": "Namirash encounter",
+      "storyBeats": "it is revealed that Farhat was born without a shadow; the Shadow joined him only on a night of lunar eclipse and in part derives from Namirash fragments that escaped the darkness.",
+      "sceneName": "Ch48_HeartOfDarkness",
+      "locPrefix": "ch48.",
+      "objectives": [
+        {
+          "id": "ch48.enter-darkness",
+          "tier": 1,
+          "text": "Enter the darkness realm"
+        },
+        {
+          "id": "ch48.learn-shadow-origin",
+          "tier": 1,
+          "text": "Learn the Shadow's origin"
+        },
+        {
+          "id": "ch48.evolve-shadow",
+          "tier": 2,
+          "text": "Evolve the Shadow"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "shadow.evolved"
+      ],
+      "bibleTag": "V/I",
+      "spec": {
+        "storyBeats": "it is revealed that Farhat was born without a shadow; the Shadow joined him only on a night of lunar eclipse and in part derives from Namirash fragments that escaped the darkness.",
+        "design": "the darkness realm, a Shadow-centred chapter that unlocks its evolved form.",
+        "failAndUnlocks": "corruption failure; Shadow evolved."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 49,
+      "id": "ch49",
+      "episodeTitle": "Great Manoeuvres",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Hub",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Mobilisation chapter with the whole cast",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; the Italian title means great manoeuvres, a build-up before the finale.",
+      "sceneName": "Ch49_GreatManoeuvres",
+      "locPrefix": "ch49.",
+      "objectives": [
+        {
+          "id": "ch49.gather-allies",
+          "tier": 1,
+          "text": "Gather the allies"
+        },
+        {
+          "id": "ch49.prepare-finale",
+          "tier": 2,
+          "text": "Prepare for the finale"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the Italian title means great manoeuvres, a build-up before the finale.",
+        "design": "a mobilisation chapter with the whole cast.",
+        "failAndUnlocks": "objective failure."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 50,
+      "id": "ch50",
+      "episodeTitle": "On the Edge of the Abyss",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "SetPiece",
+      "location": "Abyss",
+      "coreMechanic": "Precipice traversal",
+      "setPiece": "Unconfirmed",
+      "storyBeats": "unconfirmed; an abyss.",
+      "sceneName": "Ch50_OnTheEdgeOfTheAbyss",
+      "locPrefix": "ch50.",
+      "objectives": [
+        {
+          "id": "ch50.cross-precipice",
+          "tier": 1,
+          "text": "Cross the precipice"
+        },
+        {
+          "id": "ch50.survive-crisis",
+          "tier": 2,
+          "text": "Survive the crisis"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; an abyss.",
+        "design": "precipice traversal and a crisis.",
+        "failAndUnlocks": "fall resets to the last ledge."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 51,
+      "id": "ch51",
+      "episodeTitle": "Farhat Against Everybody",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "B",
+      "chapterType": "Boss",
+      "location": "Unconfirmed location",
+      "coreMechanic": "Non-lethal gauntlet against enslaved allies",
+      "setPiece": "Enslaved Wings and Rashid",
+      "storyBeats": "unconfirmed; the title suggests Farhat isolated, in line with Laylah's control of Wings and Rashid [V].",
+      "sceneName": "Ch51_FarhatAgainstEverybody",
+      "locPrefix": "ch51.",
+      "objectives": [
+        {
+          "id": "ch51.face-enslaved-allies",
+          "tier": 1,
+          "text": "Face the enslaved allies"
+        },
+        {
+          "id": "ch51.break-the-spell",
+          "tier": 1,
+          "text": "Break the spell without harming them"
+        },
+        {
+          "id": "ch51.restore-wings",
+          "tier": 2,
+          "text": "Restore Wings with Zenem's spirit"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "finale.unlocked"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "unconfirmed; the title suggests Farhat isolated, in line with Laylah's control of Wings and Rashid [V].",
+        "design": "a non-lethal gauntlet against enslaved allies, freed rather than beaten (Wings's monster form, the spirit of Zenem).",
+        "failAndUnlocks": "health failure; unlocks the finale."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    },
+    {
+      "number": 52,
+      "id": "ch52",
+      "episodeTitle": "The Lacking Grain",
+      "season": 2,
+      "part": 2,
+      "sourceTag": "Inferred",
+      "costTier": "A",
+      "chapterType": "Boss",
+      "location": "Final location, epilogue in the Emirates",
+      "coreMechanic": "Multi-stage finale using every Season 2 system",
+      "setPiece": "Laylah and the Namirash",
+      "storyBeats": "the finale. Required outcomes from the verified Season 2 arc: Laylah is defeated and returns to being an ordinary Russian girl; Rashid and Wings are free; the black holes are closed; the light and darkness balance is restored.",
+      "sceneName": "Ch52_TheLackingGrain",
+      "locPrefix": "ch52.",
+      "objectives": [
+        {
+          "id": "ch52.reach-final-arena",
+          "tier": 1,
+          "text": "Reach the final arena"
+        },
+        {
+          "id": "ch52.balance-light-dark",
+          "tier": 1,
+          "text": "Balance light and dark with the grains"
+        },
+        {
+          "id": "ch52.free-laylah",
+          "tier": 2,
+          "text": "Free Laylah"
+        },
+        {
+          "id": "ch52.restore-emirates",
+          "tier": 3,
+          "text": "Restore the Emirates"
+        }
+      ],
+      "checkpointIds": [
+        "start",
+        "mid",
+        "pre-boss"
+      ],
+      "failureRules": [
+        {
+          "type": "Health",
+          "checkpointId": "",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Objective",
+          "checkpointId": "pre-boss",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        },
+        {
+          "type": "Corruption",
+          "checkpointId": "mid",
+          "lockShadowNextArea": false,
+          "resourceLoss": 0,
+          "hintAfterRetries": 2
+        }
+      ],
+      "unlocks": [
+        "part2.complete",
+        "new-game-plus",
+        "gallery"
+      ],
+      "bibleTag": "I",
+      "spec": {
+        "storyBeats": "the finale. Required outcomes from the verified Season 2 arc: Laylah is defeated and returns to being an ordinary Russian girl; Rashid and Wings are free; the black holes are closed; the light and darkness balance is restored.",
+        "design": "a multi-stage finale with Laylah and the Namirash as final boss, using every Season 2 system, a closing epilogue in the Emirates.",
+        "failAndUnlocks": "health failure; objective failure; unlocks Chapter Select, New Game Plus and the gallery."
+      },
+      "sourceDocSection": "references/bible/11-season-2-chapters-part-two.md",
+      "provisionalUnlocks": []
+    }
+  ],
+  "notes": "Generated from the production bible. sourceTag is Verified only when the bible's tag is exactly [V]; [V/I] and [I] chapters are Inferred. Chapter 48 is [V] in the chapter text but [V/I] in the master overview table, so it is treated as Inferred.",
+  "fragmentPlacement": {
+    "fragment.1": {
+      "chapter": 4,
+      "basis": "Chapter 4 retrieves the first fragment at the place and moment Tilda calculated (Inferred)."
+    },
+    "fragment.2": {
+      "chapter": 6,
+      "basis": "Bible: two fragments are in hand by chapter 8; chapter 6 lists a possible second retrieval. Provisional until the episode check."
+    },
+    "fragment.3": {
+      "chapter": 12,
+      "basis": "Bible tracker says chapters 9 to 12 and the exact chapter is unconfirmed. Chapter 12 is a provisional assignment."
+    },
+    "fragment.4": {
+      "chapter": 15,
+      "basis": "Mexico, Egokhan pyramid. Bible tracker says chapter 14 or 15; chapter 15 gives the fragment on exit."
+    },
+    "fragment.5": {
+      "chapter": 18,
+      "basis": "Stonehenge (Verified)."
+    },
+    "fragment.6": {
+      "chapter": 21,
+      "basis": "Reached in chapter 21 (Verified); location unconfirmed."
+    },
+    "fragment.7": {
+      "chapter": 24,
+      "basis": "The seven are united at the start of chapter 25, so the seventh arrives in chapter 24 or earlier. Provisional."
+    }
+  }
+}

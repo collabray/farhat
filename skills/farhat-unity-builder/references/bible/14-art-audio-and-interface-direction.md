@@ -1,0 +1,7 @@
+## 14. Art, audio and interface direction
+
+**Art.** Stylised 3D that keeps the series' character silhouettes: Farhat's raven hair and hairband, Tilda's koala laptop, Wings's scorpion form, Ben's butler suit. Each region has its own palette (warm desert gold for the Emirates, cool grey-green for England, saturated greens for Mexico, snow white for Siberia). Light is warm and golden; the Namirash is desaturated and inverted. Effects are stylised and bright. **Reference needed from the rights holder:** the original model sheets and background art.
+
+**Audio.** Orchestral score with Middle-Eastern instruments for the Emirates and regional colours elsewhere. Leitmotifs: Farhat (heroic, rising), Shadow (playful pizzicato), Egokhan (low brass), the Shariman (bright choral), the Namirash (the same motifs played in reverse). Voices: confirm with the rights holder whether to use the original casts (the Italian series names Stefano Crescentini as Farhat's voice, Federica De Bortoli as Tilda, among others) or recast; localisation languages to be fixed in pre-production.
+
+**Interface.** Hearts of light and a light meter at the top left; Shadow cooldown ring near the character; companion portraits at the bottom left; a three-tier quest tracker (chapter goal, season goal, final goal); episode-title cards at the start of each chapter; a light-star rating card at the end. Fonts and icons carry a gentle Arabian-lantern motif.

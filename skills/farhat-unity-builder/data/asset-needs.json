@@ -1,0 +1,1258 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    "Check the licence on the source page at download time and let scripts/asset_fetch.py record it in the ledger. Only CC0, CC BY and (fonts) SIL OFL are allowed.",
+    "Never download models of the licensed characters (Farhat, Tilda, Wings, Ben, the Shadow, Egokhan, Rashid and the rest). They are modelled from the rights holder's model sheets. Until then use the stand-in humanoid and creature rigs below.",
+    "Prefer stylised, low to mid poly assets that match the bible's art direction: flat or lightly toon-shaded URP materials, shared texture atlases.",
+    "Keep to the performance budgets in references/project/10-performance-and-platform-targets.md. Reject assets over the per-chapter budget instead of importing them.",
+    "Keep every download under Assets/ThirdParty/<source>/ so the ledger paths stay stable."
+  ],
+  "sources": {
+    "polyhaven": {
+      "site": "https://polyhaven.com",
+      "license": "cc0",
+      "kinds": [
+        "hdris",
+        "textures",
+        "models"
+      ],
+      "how": "python3 scripts/asset_fetch.py polyhaven search|download"
+    },
+    "kenney": {
+      "site": "https://kenney.nl/assets",
+      "license": "cc0 (confirm on the pack page)",
+      "kinds": [
+        "models",
+        "ui",
+        "audio",
+        "textures"
+      ],
+      "how": "find the pack page, then python3 scripts/asset_fetch.py url download --license cc0 ..."
+    },
+    "quaternius": {
+      "site": "https://quaternius.com",
+      "license": "cc0 (confirm on the pack page)",
+      "kinds": [
+        "models",
+        "characters",
+        "animations"
+      ],
+      "how": "find the pack page, then python3 scripts/asset_fetch.py url download --license cc0 ..."
+    },
+    "sketchfab": {
+      "site": "https://sketchfab.com",
+      "license": "per model; only CC0 and CC BY accepted",
+      "kinds": [
+        "models"
+      ],
+      "how": "python3 scripts/asset_fetch.py sketchfab search|download (needs SKETCHFAB_API_TOKEN)"
+    },
+    "opengameart": {
+      "site": "https://opengameart.org",
+      "license": "per asset; only CC0 and CC BY accepted",
+      "kinds": [
+        "audio",
+        "music",
+        "2d"
+      ],
+      "how": "python3 scripts/asset_fetch.py url download with the licence shown on the asset page"
+    },
+    "freesound": {
+      "site": "https://freesound.org",
+      "license": "per sound; only CC0 and CC BY accepted",
+      "kinds": [
+        "audio"
+      ],
+      "how": "python3 scripts/asset_fetch.py url download with the licence shown on the sound page"
+    },
+    "google-fonts": {
+      "site": "https://fonts.google.com",
+      "license": "SIL OFL 1.1 for most families (confirm per family)",
+      "kinds": [
+        "fonts"
+      ],
+      "how": "python3 scripts/asset_fetch.py url download --license OFL ..."
+    }
+  },
+  "categories": [
+    {
+      "id": "sky-desert-day",
+      "kind": "hdris",
+      "chapters": [
+        1,
+        2,
+        6,
+        12,
+        22,
+        25,
+        26
+      ],
+      "queries": [
+        "desert",
+        "sunny",
+        "clear sky"
+      ],
+      "note": "Warm golden Emirates light; the default for desert chapters.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-england-overcast",
+      "kind": "hdris",
+      "chapters": [
+        3,
+        8,
+        18,
+        19,
+        43
+      ],
+      "queries": [
+        "overcast",
+        "cloudy",
+        "field"
+      ],
+      "note": "Cool grey-green England; fog density is set in the scene.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-jungle",
+      "kind": "hdris",
+      "chapters": [
+        13,
+        14,
+        15
+      ],
+      "queries": [
+        "forest",
+        "jungle",
+        "canopy"
+      ],
+      "note": "Saturated greens for the Mexican chapters.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-canyon-dusk",
+      "kind": "hdris",
+      "chapters": [
+        23
+      ],
+      "queries": [
+        "canyon",
+        "sunset",
+        "rocks"
+      ],
+      "note": "Wind-swept canyon chase.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-night",
+      "kind": "hdris",
+      "chapters": [
+        5,
+        27,
+        40,
+        48
+      ],
+      "queries": [
+        "night",
+        "stars",
+        "moon"
+      ],
+      "note": "Sepolta, the dream world, limbo and the darkness realm; desaturate and invert for Namirash zones.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-snow",
+      "kind": "hdris",
+      "chapters": [
+        28
+      ],
+      "queries": [
+        "snow",
+        "winter",
+        "overcast"
+      ],
+      "note": "Siberia, snow white palette.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-city-sunset",
+      "kind": "hdris",
+      "chapters": [
+        38
+      ],
+      "queries": [
+        "city",
+        "rooftop",
+        "sunset"
+      ],
+      "note": "New York rooftop chase.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "sky-coast",
+      "kind": "hdris",
+      "chapters": [
+        46
+      ],
+      "queries": [
+        "beach",
+        "coast",
+        "sea"
+      ],
+      "note": "Sweet Coast.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-sand",
+      "kind": "textures",
+      "chapters": [
+        1,
+        2,
+        6,
+        12,
+        22,
+        25
+      ],
+      "queries": [
+        "sand",
+        "desert"
+      ],
+      "note": "Dunes, ground planes, Ar Rimal.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-sandstone",
+      "kind": "textures",
+      "chapters": [
+        1,
+        5,
+        26,
+        27
+      ],
+      "queries": [
+        "sandstone",
+        "stone wall"
+      ],
+      "note": "Palace walls, Sepolta streets, the great maze.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-rock-cliff",
+      "kind": "textures",
+      "chapters": [
+        7,
+        23,
+        19,
+        33
+      ],
+      "queries": [
+        "rock",
+        "cliff"
+      ],
+      "note": "Cappadocia towers, canyon walls, volcano.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-cobblestone",
+      "kind": "textures",
+      "chapters": [
+        3,
+        8,
+        19,
+        43
+      ],
+      "queries": [
+        "cobblestone",
+        "old brick"
+      ],
+      "note": "Oxford courtyard and campus.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-grass-moor",
+      "kind": "textures",
+      "chapters": [
+        18,
+        36
+      ],
+      "queries": [
+        "grass",
+        "moss",
+        "dirt"
+      ],
+      "note": "English moor, forest floor.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-jungle-ground",
+      "kind": "textures",
+      "chapters": [
+        13,
+        14
+      ],
+      "queries": [
+        "mud",
+        "leaves",
+        "forest floor"
+      ],
+      "note": "Mayan valley.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-mossy-stone",
+      "kind": "textures",
+      "chapters": [
+        14,
+        15
+      ],
+      "queries": [
+        "mossy stone",
+        "ancient wall"
+      ],
+      "note": "Mayan pyramid.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-lava-rock",
+      "kind": "textures",
+      "chapters": [
+        19,
+        25
+      ],
+      "queries": [
+        "volcanic rock",
+        "lava",
+        "basalt"
+      ],
+      "note": "Volcano crater, magma flood.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-snow",
+      "kind": "textures",
+      "chapters": [
+        15,
+        28
+      ],
+      "queries": [
+        "snow",
+        "ice"
+      ],
+      "note": "Ice chamber and Siberia.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-metal-plates",
+      "kind": "textures",
+      "chapters": [
+        11,
+        17,
+        18,
+        21
+      ],
+      "queries": [
+        "metal plate",
+        "rust",
+        "industrial"
+      ],
+      "note": "Petroglobe machines.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-concrete",
+      "kind": "textures",
+      "chapters": [
+        33,
+        35,
+        38
+      ],
+      "queries": [
+        "concrete",
+        "asphalt"
+      ],
+      "note": "Stadium and city.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "tex-wood-planks",
+      "kind": "textures",
+      "chapters": [
+        8,
+        19,
+        25
+      ],
+      "queries": [
+        "wood planks",
+        "wooden floor"
+      ],
+      "note": "Villages, tent, mine props.",
+      "sources": [
+        "polyhaven"
+      ]
+    },
+    {
+      "id": "model-rocks",
+      "kind": "models",
+      "chapters": [
+        2,
+        6,
+        12,
+        23
+      ],
+      "queries": [
+        "rock",
+        "boulder",
+        "cliff"
+      ],
+      "note": "Scatter props for open desert and canyons.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-ruins",
+      "kind": "models",
+      "chapters": [
+        5,
+        24,
+        26,
+        27
+      ],
+      "queries": [
+        "ruins",
+        "pillar",
+        "column",
+        "arch"
+      ],
+      "note": "Ruined walls, columns and arches.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-standing-stones",
+      "kind": "models",
+      "chapters": [
+        18
+      ],
+      "queries": [
+        "standing stone",
+        "megalith",
+        "stone circle"
+      ],
+      "note": "Stonehenge circle (stones are the puzzle pieces).",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-stepped-temple",
+      "kind": "models",
+      "chapters": [
+        14,
+        15,
+        33
+      ],
+      "queries": [
+        "pyramid",
+        "temple",
+        "ziggurat"
+      ],
+      "note": "Mayan pyramid shape and the Black Scorpion temple; the Egokhan face is a bespoke sculpt.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-village-props",
+      "kind": "models",
+      "chapters": [
+        8,
+        13,
+        14,
+        19
+      ],
+      "queries": [
+        "barrel",
+        "crate",
+        "cart",
+        "well",
+        "market stall"
+      ],
+      "note": "Village hubs.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-lanterns",
+      "kind": "models",
+      "chapters": [
+        1,
+        5,
+        26
+      ],
+      "queries": [
+        "lantern",
+        "torch",
+        "brazier"
+      ],
+      "note": "Arabian-lantern motif and dark-town lighting.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-tent-camp",
+      "kind": "models",
+      "chapters": [
+        19,
+        39
+      ],
+      "queries": [
+        "tent",
+        "campfire",
+        "bedroll"
+      ],
+      "note": "Ben's foldable tent and the mountain camp.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-vegetation",
+      "kind": "models",
+      "chapters": [
+        1,
+        13,
+        14,
+        36
+      ],
+      "queries": [
+        "palm",
+        "cactus",
+        "fern",
+        "tree"
+      ],
+      "note": "Gardens, jungle, forest.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-mine",
+      "kind": "models",
+      "chapters": [
+        25
+      ],
+      "queries": [
+        "mine cart",
+        "rail",
+        "wooden beam",
+        "support"
+      ],
+      "note": "English coal mine escape.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-city",
+      "kind": "models",
+      "chapters": [
+        38
+      ],
+      "queries": [
+        "street lamp",
+        "fire escape",
+        "water tower",
+        "rooftop"
+      ],
+      "note": "New York rooftops.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-stadium",
+      "kind": "models",
+      "chapters": [
+        33,
+        35
+      ],
+      "queries": [
+        "bleachers",
+        "stadium",
+        "seat"
+      ],
+      "note": "Beijing Olympic stadium.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-balloon",
+      "kind": "models",
+      "chapters": [
+        7
+      ],
+      "queries": [
+        "hot air balloon",
+        "basket"
+      ],
+      "note": "The balloon; monstrous balloons reuse it with a bespoke face.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-books-lab",
+      "kind": "models",
+      "chapters": [
+        2,
+        3,
+        19,
+        43
+      ],
+      "queries": [
+        "bookshelf",
+        "desk",
+        "laptop",
+        "globe"
+      ],
+      "note": "Oxford library and lab.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-spider-web",
+      "kind": "models",
+      "chapters": [
+        13
+      ],
+      "queries": [
+        "cobweb",
+        "spider web"
+      ],
+      "note": "Web dungeon (spiders are a bespoke creature).",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "model-doors-gates",
+      "kind": "models",
+      "chapters": [
+        1,
+        26,
+        29
+      ],
+      "queries": [
+        "gate",
+        "door",
+        "portcullis"
+      ],
+      "note": "Palace, maze, Ashtarak.",
+      "sources": [
+        "polyhaven",
+        "kenney",
+        "quaternius",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "rig-humanoid-standin",
+      "kind": "characters",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "stylised humanoid",
+        "base character",
+        "rigged"
+      ],
+      "note": "CC0 rigged humanoid used as a stand-in for Farhat, Tilda, Ben and humans until the licensed model sheets are modelled. Retarget animations to it.",
+      "sources": [
+        "quaternius",
+        "kenney"
+      ]
+    },
+    {
+      "id": "rig-creature-standin",
+      "kind": "characters",
+      "chapters": [
+        2,
+        5,
+        13,
+        22
+      ],
+      "queries": [
+        "scorpion",
+        "spider",
+        "creature"
+      ],
+      "note": "Stand-in for Wings (scorpion) and the giant spider.",
+      "sources": [
+        "quaternius",
+        "kenney",
+        "sketchfab"
+      ]
+    },
+    {
+      "id": "animation-locomotion",
+      "kind": "animations",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "sword attack",
+        "roll",
+        "hit reaction",
+        "parry"
+      ],
+      "note": "Locomotion and combat set retargeted to the humanoid rig.",
+      "sources": [
+        "quaternius",
+        "kenney"
+      ]
+    },
+    {
+      "id": "audio-ambience",
+      "kind": "audio",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "desert wind",
+        "cave drip",
+        "jungle ambience",
+        "crowd murmur",
+        "city traffic",
+        "snow wind",
+        "sea waves"
+      ],
+      "note": "Per-region ambience loops.",
+      "sources": [
+        "opengameart",
+        "freesound",
+        "kenney"
+      ]
+    },
+    {
+      "id": "audio-sfx",
+      "kind": "audio",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "sword swing",
+        "sword clash",
+        "footsteps sand",
+        "footsteps stone",
+        "magic shimmer",
+        "crystal chime",
+        "potion bubbling",
+        "explosion small"
+      ],
+      "note": "Core effects.",
+      "sources": [
+        "opengameart",
+        "freesound",
+        "kenney"
+      ]
+    },
+    {
+      "id": "audio-music",
+      "kind": "music",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "arabian orchestral",
+        "adventure orchestral",
+        "tension",
+        "calm piano",
+        "epic finale"
+      ],
+      "note": "Licensed score is separate (bible section 14); this is the temporary music bed. CC0 or CC BY only.",
+      "sources": [
+        "opengameart",
+        "freesound"
+      ]
+    },
+    {
+      "id": "ui-icons",
+      "kind": "ui",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "ui pack",
+        "icons",
+        "hearts",
+        "buttons"
+      ],
+      "note": "HUD and menu art in a lantern-and-gold style.",
+      "sources": [
+        "kenney"
+      ]
+    },
+    {
+      "id": "fonts",
+      "kind": "fonts",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "queries": [
+        "display serif",
+        "readable sans"
+      ],
+      "note": "One display font for title cards and one highly readable font for subtitles and menus (accessibility).",
+      "sources": [
+        "google-fonts"
+      ]
+    }
+  ]
+}

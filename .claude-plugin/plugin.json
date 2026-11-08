@@ -1,0 +1,8 @@
+{
+  "name": "farhat-unity-builder",
+  "version": "1.0.0",
+  "description": "Builds the Unity game Farhat: The Prince of the Desert (52 chapters) from its production bible, with scripts, a compile-checked Unity C# foundation, licensed-asset tooling and QA gates.",
+  "author": { "name": "Farhat Game Project" },
+  "license": "MIT",
+  "keywords": ["unity", "game-development", "agent-skill", "farhat"]
+}

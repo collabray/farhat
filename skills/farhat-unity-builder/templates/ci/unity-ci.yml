@@ -1,0 +1,87 @@
+name: Unity CI
+
+# Needs three repository secrets (see the GameCI documentation for activating a Unity licence):
+#   UNITY_LICENSE, UNITY_EMAIL, UNITY_PASSWORD
+# Tests run on every push and pull request. Release builds run on version tags and use the story gate,
+# so a release fails while any included chapter is not tagged Verified.
+
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+    tags: ['v*']
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+
+jobs:
+  test:
+    name: Tests (${{ matrix.mode }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [EditMode, PlayMode]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-test-${{ hashFiles('Packages/manifest.json', 'ProjectSettings/ProjectVersion.txt') }}
+          restore-keys: Library-test-
+      - uses: game-ci/unity-test-runner@v4
+        id: tests
+        with:
+          testMode: ${{ matrix.mode }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          checkName: ${{ matrix.mode }} results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results-${{ matrix.mode }}
+          path: ${{ steps.tests.outputs.artifactsPath }}
+
+  build:
+    name: Build (Windows 64-bit, integration)
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-build-${{ hashFiles('Packages/manifest.json', 'ProjectSettings/ProjectVersion.txt') }}
+          restore-keys: Library-build-
+      - uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: StandaloneWindows64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Build-StandaloneWindows64
+          path: build/StandaloneWindows64
+
+  release:
+    name: Release build with the story gate
+    needs: test
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: StandaloneWindows64
+          buildMethod: Farhat.EditorTools.BuildScript.BuildWindows64
+          customParameters: -releaseBuild -buildOutput build/StandaloneWindows64/Farhat.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Release-StandaloneWindows64
+          path: build/StandaloneWindows64

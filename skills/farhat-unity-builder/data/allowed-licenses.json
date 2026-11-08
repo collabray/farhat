@@ -1,0 +1,33 @@
+{
+  "policy": "Only CC0, CC BY (attribution) and, for fonts, SIL Open Font License assets may enter the game. Anything NonCommercial, NoDerivatives or ShareAlike is refused, because a commercial game must be free to modify and sell its assets without copyleft or commercial limits. Editorial, 'Standard' store licences and unknown licences are refused until a human has read the terms and recorded an exception in the ledger.",
+  "allowed": [
+    {
+      "id": "cc0",
+      "attributionRequired": false,
+      "label": "CC0 1.0 Universal (public domain dedication)",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "id": "cc-by",
+      "attributionRequired": true,
+      "label": "Creative Commons Attribution 4.0 (or 3.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "ofl",
+      "attributionRequired": false,
+      "label": "SIL Open Font License 1.1 (fonts only; ship the licence text with the font)",
+      "url": "https://openfontlicense.org/"
+    }
+  ],
+  "refused": [
+    "cc-by-sa",
+    "cc-by-nc",
+    "cc-by-nd",
+    "cc-by-nc-sa",
+    "cc-by-nc-nd",
+    "editorial",
+    "standard",
+    "unknown"
+  ]
+}
