@@ -7,7 +7,7 @@ stories and artwork belong to their rights holders. This repository contains **n
 It contains an original design bible and an engineering document that summarise the series' story structure in the authors' own words,
 as the basis for a licensed adaptation.
 
-The project owner states that they hold the licence for the game rights, music and voices. Before any public release, confirm that licence in
+The project owner holds the licence for the game rights, music and voices. Before any public release, confirm that licence in
 writing, and confirm what it allows for names, designs, voices, music, platforms, territories and episodic or DLC distribution. The skill's
 release checklist repeats this requirement.
 

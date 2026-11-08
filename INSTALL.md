@@ -24,8 +24,8 @@ format, use the installer below.
 ## The installer
 
 ```
-git clone <repository url>
-cd <repository>
+git clone https://github.com/collabray/farhat.git
+cd https://github.com/collabray/farhat.git
 python3 install.py                    # current folder, Claude Code and Antigravity
 python3 install.py --project ./Game   # another project folder
 python3 install.py --target user      # all projects for this user
